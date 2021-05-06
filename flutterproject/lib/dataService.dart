@@ -6,6 +6,7 @@ class Recipe {
       this.imageURL,
       this.chefkochURL,
       this.ingredients,
+      this.totalEmissions,
       this.rating});
 
   static Recipe example = Recipe(
@@ -20,7 +21,9 @@ class Recipe {
         Ingredient("1TL", "nutella"),
         Ingredient("1 L", "Eier")
       ],
+      totalEmissions: 4567.0,
       rating: 4.6);
+
   // Recipe.fromJSON(String json){
   //   return Recipe()
   // }
@@ -28,7 +31,7 @@ class Recipe {
   String imageURL = "";
   String chefkochURL = "";
   List<Ingredient> ingredients;
-  double totalEmissions = 0;
+  double totalEmissions;
   double rating = 0;
 }
 
