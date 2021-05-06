@@ -4,6 +4,13 @@ const {
   mapRecipeToEmissionsData,
 } = require("../data/dataProcessing.js");
 
+const {
+  checkIfURLwasAlreadyCalled,
+  readDataForURLFromFile,
+  writeDataForURLToFile,
+  readAllCachedFilesAndReturnContent,
+} = require("../data/cacher.js");
+
 const { chefkochURLToData } = require("../data/chefkochscraper.js");
 
 async function oneIngredientHandler(req, res) {
@@ -53,8 +60,12 @@ async function recipeHandler(req, res) {
 }
 
 async function allIngredients(req, res) {
-  console.log(req.body);
   res.json(getAllFoods());
+}
+
+async function allCachedRecipes(req, res) {
+  allCachedContent = await readAllCachedFilesAndReturnContent(req.body.limit);
+  res.json(allCachedContent);
 }
 
 async function chefkochURLHandler(req, res) {
@@ -65,18 +76,26 @@ async function chefkochURLHandler(req, res) {
     req.body.url.search("chefkoch") != -1
   ) {
     try {
-      // get data from chefkoch url:
       let chefkochurl = req.body.url;
-      let recipeDataFromChefkoch = await chefkochURLToData(chefkochurl);
-      if (recipeDataFromChefkoch.error) {
-        throw new Error(
-          "recipeDataFromChefkoch.error was true, this cant be good."
-        );
+      // check if already cached:
+      urlAlreadyCached = await checkIfURLwasAlreadyCalled(chefkochurl);
+      if (urlAlreadyCached) {
+        data = await readDataForURLFromFile(chefkochurl);
+        res.json({ ...data, cached: true });
       } else {
-        let recipeAndEmissionsData = mapRecipeToEmissionsData(
-          recipeDataFromChefkoch
-        );
-        res.json(recipeAndEmissionsData); // here we return the recipedata with the emission score.
+        // get data from chefkoch url:
+        let recipeDataFromChefkoch = await chefkochURLToData(chefkochurl);
+        if (recipeDataFromChefkoch.error) {
+          throw new Error(
+            "recipeDataFromChefkoch.error was true, this cant be good."
+          );
+        } else {
+          let recipeAndEmissionsData = mapRecipeToEmissionsData(
+            recipeDataFromChefkoch
+          );
+          res.json(recipeAndEmissionsData); // here we return the recipedata with the emission score.
+          await writeDataForURLToFile(chefkochurl, recipeAndEmissionsData);
+        }
       }
     } catch (ex) {
       console.log(ex);
@@ -93,3 +112,4 @@ module.exports.oneIngredientHandler = oneIngredientHandler;
 module.exports.recipeHandler = recipeHandler;
 module.exports.allIngredients = allIngredients;
 module.exports.chefkochURLHandler = chefkochURLHandler;
+module.exports.allCachedRecipes = allCachedRecipes;

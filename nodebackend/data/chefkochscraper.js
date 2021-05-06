@@ -69,6 +69,4 @@ async function run() {
   console.log(data);
 }
 
-run();
-
 module.exports.chefkochURLToData = chefkochURLToData;

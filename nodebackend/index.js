@@ -9,6 +9,7 @@ const {
   recipeHandler,
   allIngredients,
   chefkochURLHandler,
+  allCachedRecipes,
 } = require("./routes/routes.js");
 
 app.get("/", (req, res) => {
@@ -23,6 +24,7 @@ app.post("/capgemini/ingredient", oneIngredientHandler);
 app.post("/capgemini/recipe", recipeHandler);
 app.post("/capgemini/allingredients", allIngredients);
 app.post("/capgemini/chefkochurl", chefkochURLHandler);
+app.post("/capgemini/allcached", allCachedRecipes);
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);

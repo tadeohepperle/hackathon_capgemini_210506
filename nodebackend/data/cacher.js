@@ -12,14 +12,48 @@ const hashCode = function (string) {
 };
 
 async function checkIfURLwasAlreadyCalled(url) {
-  hashCodeForURL = hashCode(url);
+  let hashCodeForURL = hashCode(url);
+  console.log("check", url, hashCodeForURL);
   // scan dir if file exists:
-  dirContent = await fs.promises.readdir("./cache");
-  found = dirContent.find((el) => el == `${hashCodeForURL}.json`);
-  if (found) {
-    let file = fs.promises.readFile(`./cache/${hashCodeForURL}.json`, "utf8");
-    recipeData = JSON.parse(file);
-    console.log(recipeData);
-  }
+  let dirContent = await fs.promises.readdir("./cache");
+  let found = dirContent.find((el) => el == `${hashCodeForURL}.json`);
+  return found;
 }
-checkIfURLwasAlreadyCalled("ulrsfds");
+
+async function readAllCachedFilesAndReturnContent(limit) {
+  let dirContent = await fs.promises.readdir("./cache");
+  let allRecipes = [];
+  for (let i = 0; i < dirContent.length; i++) {
+    let file = await fs.promises.readFile(`./cache/${dirContent[i]}`, "utf8");
+    let recipeData = JSON.parse(file);
+    allRecipes.push(recipeData);
+    if (limit && limit > i) break;
+  }
+  return allRecipes;
+}
+
+async function readDataForURLFromFile(url) {
+  let hashCodeForURL = hashCode(url);
+  console.log("read", url, hashCodeForURL);
+  let file = await fs.promises.readFile(
+    `./cache/${hashCodeForURL}.json`,
+    "utf8"
+  );
+  let recipeData = JSON.parse(file);
+  return recipeData;
+}
+
+async function writeDataForURLToFile(url, data) {
+  let hashCodeForURL = hashCode(url);
+  console.log("write", url, hashCodeForURL);
+  await fs.promises.writeFile(
+    `./cache/${hashCodeForURL}.json`,
+    JSON.stringify(data),
+    "utf8"
+  );
+}
+
+module.exports.checkIfURLwasAlreadyCalled = checkIfURLwasAlreadyCalled;
+module.exports.readDataForURLFromFile = readDataForURLFromFile;
+module.exports.writeDataForURLToFile = writeDataForURLToFile;
+module.exports.readAllCachedFilesAndReturnContent = readAllCachedFilesAndReturnContent;
