@@ -330,6 +330,17 @@
     "synonyms": ""
   },
   {
+    "food_id": "1690",
+    "food_category": "Meat and alternatives",
+    "food": "Beef",
+    "serving_weight": "125",
+    "serving_desc": "Use the size of pack as a guide",
+    "food_URL_encoded": "Beef",
+    "emissions_value": "43.33033",
+    "food_german": "Rind",
+    "synonyms": ""
+  },
+  {
     "food_id": "275",
     "food_category": "Processed food",
     "food": "Beef Lasagne - ready meal",
@@ -1229,6 +1240,28 @@
     "food_URL_encoded": "Chicken",
     "emissions_value": "4.70605",
     "food_german": "Huhn",
+    "synonyms": ""
+  },
+  {
+    "food_id": "17000",
+    "food_category": "Meat and alternatives",
+    "food": "Chicken",
+    "serving_weight": "160",
+    "serving_desc": "About half the size of your hand",
+    "food_URL_encoded": "Chicken",
+    "emissions_value": "4.70605",
+    "food_german": "Pute",
+    "synonyms": ""
+  },
+  {
+    "food_id": "1701",
+    "food_category": "Meat and alternatives",
+    "food": "Chicken",
+    "serving_weight": "160",
+    "serving_desc": "About half the size of your hand",
+    "food_URL_encoded": "Chicken",
+    "emissions_value": "4.70605",
+    "food_german": "Hühner",
     "synonyms": ""
   },
   {

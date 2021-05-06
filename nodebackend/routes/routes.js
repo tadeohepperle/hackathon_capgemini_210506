@@ -4,6 +4,8 @@ const {
   mapRecipeToEmissionsData,
 } = require("../data/dataProcessing.js");
 
+const { chefkochURLToData } = require("../chefkochparser/chefkochscraper.js");
+
 async function oneIngredientHandler(req, res) {
   if (!req.body || !req.body.foodName) {
     res
@@ -55,6 +57,39 @@ async function allIngredients(req, res) {
   res.json(getAllFoods());
 }
 
+async function chefkochURLHandler(req, res) {
+  if (
+    req.body &&
+    req.body.url &&
+    req.body.url.search &&
+    req.body.url.search("chefkoch") != -1
+  ) {
+    try {
+      // get data from chefkoch url:
+      let chefkochurl = req.body.url;
+      let recipeDataFromChefkoch = await chefkochURLToData(chefkochurl);
+      if (recipeDataFromChefkoch.error) {
+        throw new Error(
+          "recipeDataFromChefkoch.error was true, this cant be good."
+        );
+      } else {
+        let recipeAndEmissionsData = mapRecipeToEmissionsData(
+          recipeDataFromChefkoch
+        );
+        res.json(recipeAndEmissionsData); // here we return the recipedata with the emission score.
+      }
+    } catch (ex) {
+      console.log(ex);
+      res
+        .status(400)
+        .send("Please provide 'url' as field of POST-Request Body!");
+    }
+  } else {
+    res.status(400).send("Please provide 'url' as field of POST-Request Body!");
+  }
+}
+
 module.exports.oneIngredientHandler = oneIngredientHandler;
 module.exports.recipeHandler = recipeHandler;
 module.exports.allIngredients = allIngredients;
+module.exports.chefkochURLHandler = chefkochURLHandler;
