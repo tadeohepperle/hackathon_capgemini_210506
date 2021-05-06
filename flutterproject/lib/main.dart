@@ -39,18 +39,18 @@ class _OverarchingHomeComponentState extends State<OverarchingHomeComponent> {
         appBar: AppBar(
           bottom: TabBar(
             tabs: [
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_bike)),
+              Tab(icon: Icon(Icons.backup_table)),
+              Tab(icon: Icon(Icons.explore)),
+              Tab(icon: Icon(Icons.bar_chart)),
             ],
           ),
-          title: Text('Tabs Demo'),
+          title: Text('App'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.directions_car),
-            Icon(Icons.directions_transit),
             LandingScreen(),
+            DataScreen(),
+            AnalyticsScreen(),
           ],
         ),
       ),

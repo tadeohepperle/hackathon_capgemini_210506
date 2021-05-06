@@ -12,8 +12,8 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
   @override
   build(BuildContext context) {
     return Container(
-      child: Container(
-          color: Constants.backgroundColor, child: Text("Analytics Screen")),
+      color: Constants.backgroundColor,
+      child: Text("Analytics Screen"),
     );
   }
 }

@@ -12,8 +12,6 @@ class _DataScreenState extends State<DataScreen> {
   @override
   build(BuildContext context) {
     return Container(
-      child: Container(
-          color: Constants.backgroundColor, child: Text("Data Screen")),
-    );
+        color: Constants.backgroundColor, child: Text("Data Screen"));
   }
 }

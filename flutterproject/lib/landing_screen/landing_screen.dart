@@ -12,8 +12,8 @@ class _LandingScreenState extends State<LandingScreen> {
   @override
   build(BuildContext context) {
     return Container(
-      child: Container(
-          color: Constants.backgroundColor, child: Text("Landing Page")),
+      color: Constants.backgroundColor,
+      child: Text("Landing Page"),
     );
   }
 }

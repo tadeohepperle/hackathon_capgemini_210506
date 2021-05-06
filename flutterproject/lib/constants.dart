@@ -5,6 +5,6 @@ class Constants {
   static const appTitle = 'Capgemini App';
   static const primaryColor = Colors.amber;
   static const textColor = Colors.grey;
-  static const backgroundColor = Colors.lightBlue;
+  static const backgroundColor = Colors.white;
   static const double defaultPadding = 20.0;
 }
