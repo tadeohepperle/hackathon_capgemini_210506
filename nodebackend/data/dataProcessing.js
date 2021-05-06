@@ -54,7 +54,9 @@ function getAllFoods() {
 function convertAmountToGrams(amount, food) {
   // amount comes as a string i.e. "1 TL"
   let { serving_weight } = food;
-  if (serving_weight == "0") serving_weight = 100;
+  if (serving_weight == "0" || !serving_weight) serving_weight = 100;
+  else serving_weight = parseInt(serving_weight);
+  console.log(food, serving_weight);
   amount = amount.toLowerCase();
   amount = amount.replace("½", "0.5");
   amount = amount.replace("¼", "0.25");
@@ -95,7 +97,10 @@ function convertAmountToGrams(amount, food) {
       break;
     }
   }
-  let parsedValue = amount.length >= 1 ? parseFloat(amount) : 1; // falls gar nichts bei amount steht
+  console.log(einheit);
+  let parsedValue = parseFloat(amount); // falls gar nichts bei amount steht
+  if (isNaN(parsedValue)) parsedValue = 1;
+  console.log(parsedValue);
   return parsedValue * einheit.grams;
 }
 
