@@ -27,7 +27,7 @@ function mapRecipeToEmissionsData(recipe) {
       let emissions_per_gram = parseFloat(closestFood.emissions_value);
       recipeWithAdditionalData.push({
         foodName_given: ingr.foodName,
-        foodName_guessed: closestFood.foodName,
+        foodName_guessed: closestFood.food_german,
         amount: ingr.amount,
         grams,
         emissions_per_gram,
