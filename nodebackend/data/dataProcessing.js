@@ -12,13 +12,15 @@ function mapFoodNameToClosestFood(foodName) {
   return food;
 }
 
-function mapRecipeToEmissionsData(recipe) {
+function mapRecipeToEmissionsData(recipeDataObject) {
+  /// subobjet
   // recipe is formatted like this:
   // recipe = [
   //   { amount: "3 TL", foodName: "Sonneblumenöl" },
   //   { amount: "100g", foodName: "Schokolade" },
   // ];
-
+  console.log(recipeDataObject);
+  let recipe = recipeDataObject.recipe;
   let recipeWithAdditionalData = [];
   recipe.forEach((ingr) => {
     if (ingr.foodName && ingr.amount !== undefined) {

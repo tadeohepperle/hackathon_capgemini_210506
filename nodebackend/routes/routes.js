@@ -34,7 +34,7 @@ async function recipeHandler(req, res) {
     req.body.recipe[0].foodName !== undefined
   ) {
     try {
-      let recipeAndEmissionsData = mapRecipeToEmissionsData(req.body.recipe);
+      let recipeAndEmissionsData = mapRecipeToEmissionsData(req.body);
       res.json(recipeAndEmissionsData);
     } catch (ex) {
       res
