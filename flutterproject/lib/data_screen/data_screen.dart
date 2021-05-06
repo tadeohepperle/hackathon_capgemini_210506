@@ -18,15 +18,7 @@ class _DataScreenState extends State<DataScreen> {
   @override
   build(BuildContext context) {
     recipe = Recipe.example;
-    // List<Ingredient> ingredients = [
-    //   Ingredient("1TL", "nutella"),
-    //   Ingredient("1TL", "nutella"),
-    //   Ingredient("1TL", "nutella"),
-    //   Ingredient("1 L", "Eier")
-    // ];
-    // if (recipe == null)
-    //   return Container(child: Text("Recipe is null"));
-    // else
+
     return ListView(children: [
       GaugeStack(6000),
       IngredientsTable(ingredients: recipe.ingredients),

@@ -28,6 +28,7 @@ class Recipe {
   String imageURL = "";
   String chefkochURL = "";
   List<Ingredient> ingredients;
+  double totalEmissions = 0;
   double rating = 0;
 }
 
