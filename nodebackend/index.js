@@ -4,8 +4,11 @@ const app = express();
 const PORT = 3333;
 app.use(cors());
 app.use(express.json());
-const { oneIngredientHandler } = require("./routes/oneIngredientHandler.js");
-const { recipeHandler } = require("./routes/recipeHandler.js");
+const {
+  oneIngredientHandler,
+  recipeHandler,
+  allIngredients,
+} = require("./routes/routes.js");
 
 app.get("/", (req, res) => {
   res.send("Hello World!"); // never happens
@@ -17,6 +20,7 @@ app.get("/capgemini", (req, res) => {
 
 app.post("/capgemini/ingredient", oneIngredientHandler);
 app.post("/capgemini/recipe", recipeHandler);
+app.post("/capgemini/allingredients", allIngredients);
 
 app.listen(PORT, () => {
   console.log(`Example app listening at http://localhost:${PORT}`);
