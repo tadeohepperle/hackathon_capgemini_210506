@@ -1,0 +1,524 @@
+food_id,food_category,food,serving_weight,serving_desc,food_URL_encoded,emissions_value
+504,Cupboard,Allspice,3,One teaspoon,Allspice,1.13250
+482,Cupboard,Almond extract,5,1 teaspoon,Almond%20extract,0.65599
+190,Nuts and seeds,Almonds,20,About the amount that fits in your palm,Almonds,2.85600
+291,Drinks,Americano,120,Small Americano,Americano,0.70570
+58,Fish and seafood,Anchovies,80,About 4 tablespoons,Anchovies,4.22019
+41,Drinks,Apple juice,150,One small glass,Apple%20juice,2.44000
+513,Sauces and dressings,Apple sauce,40,2 tablespoons,Apple%20sauce,2.14587
+99,Fruit,Apples,80,One apple,Apples,0.90000
+100,Fruit,Apples - dried,30,One heaped serving spoon,Apples%20-%20dried,6.98000
+101,Fruit,Apples - frozen,80,One apple,Apples%20-%20frozen,2.12000
+499,Fruit,Apricot,0,,Apricot,0.43000
+534,Vegetables,Artichoke,80,Three heaped serving spoons,Artichoke,0.33840
+225,Vegetables,Asparagus,80,Three heaped serving spoons,Asparagus,7.03200
+226,Vegetables,Asparagus - canned,80,Three heaped serving spoons,Asparagus%20-%20canned,4.18400
+227,Vegetables,Asparagus - frozen,80,Three heaped serving spoons,Asparagus%20-%20frozen,3.04400
+228,Vegetables,Aubergine,80,Three heaped serving spoons,Aubergine,3.09500
+102,Fruit,Avocados,80,Half an avocado,Avocados,2.40000
+168,Meat and alternatives,Bacon,75,2 slices,Bacon,6.62826
+1,Bakery,Bagel,85,1 bagel,Bagel,1.21499
+2,Bakery,Baguette,70,1/2 small baguette,Baguette,1.30088
+212,Processed food,Baked beans,200,Half a standard 400g can,Baked%20beans,2.46740
+425,Cupboard,Baking powder,4,1 teaspoon,Baking%20powder,0.00000
+103,Fruit,Bananas,80,One banana,Bananas,1.30000
+104,Fruit,Bananas - chipped,30,One handful ,Bananas%20-%20chipped,4.40000
+105,Fruit,Bananas - dried,0,,Bananas%20-%20dried,4.40000
+354,Sauces and dressings,Barbeque sauce,18,1 tablespoon,Barbeque%20sauce,0.22176
+146,"Grains, pulses, and legumes",Barley,0,,Barley,1.11833
+439,Cupboard,Basil,0,,Basil,1.13250
+446,Cupboard,Bay leaves,0,,Bay%20leaves,1.13250
+169,Meat and alternatives,Beef,125,Use the size of pack as a guide,Beef,43.33033
+275,Processed food,Beef Lasagne - ready meal,360,Standard ready meal,Beef%20Lasagne%20-%20ready%20meal,13.88889
+273,Processed food,Beef Roast - ready meal,360,Standard-sezed ready meal,Beef%20Roast%20-%20ready%20meal,8.88889
+42,Drinks,Beer bottle,500,1 bottle,Beer%20bottle,0.87600
+43,Drinks,Beer can,330,1 can,Beer%20can,0.65965
+229,Vegetables,Beetroot,80,Three heaped serving spoons,Beetroot,1.13600
+230,Vegetables,Beetroot - pickled,80,,Beetroot%20-%20pickled,3.60800
+517,Fruit,Berries,80,,Berries,2.86000
+424,Cupboard,Bicarbonate of soda,4,1 teaspoon,Bicarbonate%20of%20soda,0.00000
+12,Biscuits and confectionery,Biscuits,0,,Biscuits,1.30333
+430,"Grains, pulses, and legumes",Black beans,80,Three heaped serving spoons,Black%20beans,0.85195
+432,Cupboard,Black pepper,0,,Black%20pepper,1.13250
+55,Drinks,Black tea,400,Normal-sized cup of tea.,Black%20tea,0.60516
+106,Fruit,Blackberries,80,,Blackberries,2.86000
+107,Fruit,Blackberries - frozen,80,,Blackberries%20-%20frozen,2.52000
+108,Fruit,Blueberries,80,,Blueberries,2.86000
+109,Fruit,Blueberries - frozen,80,,Blueberries%20-%20frozen,2.52000
+359,Sauces and dressings,Bolognese sauce,175,Half a jar,Bolognese%20sauce,2.43244
+44,Drinks,Bottled water,500,1 bottle,Bottled%20water,0.31522
+327,Drinks,Brandy,50,two 25ml shots,Brandy,2.32030
+3,Bakery,Bread,80,2 medium slices,Bread,1.21499
+365,Bakery,Bread - brown,80,2 medium slices,Bread%20-%20brown,1.10160
+366,Bakery,Bread - rye,80,2 medium slices,Bread%20-%20rye,1.07067
+364,Bakery,Bread - white,80,2 medium slices,Bread%20-%20white,1.08104
+426,Bakery,Bread crumbs,110,One cup of bread crumbs,Bread%20crumbs,1.21499
+4,Bakery,Bread roll,60,"2 small, 1 medium roll",Bread%20roll,1.21499
+368,Bakery,Bread roll - brown,60,"2 small, 1 medium roll",Bread%20roll%20-%20brown,1.20951
+367,Bakery,Bread roll - white,60,"2 small, 1 medium roll",Bread%20roll%20-%20white,1.12139
+147,Cupboard,Breakfast cereal,40,About 3 handfuls,Breakfast%20cereal,2.40140
+360,Cupboard,Breakfast cereal - non-wholegrain,40,About 3 handfuls,Breakfast%20cereal%20-%20non-wholegrain,4.00626
+148,Cupboard,Breakfast cereal - wholegrain,40,About 3 handfulls,Breakfast%20cereal%20-%20wholegrain,2.34606
+231,Vegetables,Broccoli,80,Two large broccoli spears (or 8 small florets),Broccoli,1.08080
+232,Vegetables,Brussels Sprouts,80,Three heaped serving spoons,Brussels%20Sprouts,0.75000
+233,Vegetables,Brussels sprouts - frozen,80,Three heaped serving spoons,Brussels%20sprouts%20-%20frozen,1.87500
+471,"Grains, pulses, and legumes",Buckwheat,0,wheat,Buckwheat,0.71846
+149,"Grains, pulses, and legumes",Bulgar,120,About 6 tablespoons,Bulgar,0.76008
+28,Dairy and alternatives,Butter,14,1 tablespoon,Butter,9.75789
+29,Dairy and alternatives,Buttermilk,200,One small glass. Milk on cereal would be 125ml,Buttermilk,1.10000
+234,Vegetables,Cabbage,80,Three heaped serving spoons,Cabbage,0.62200
+235,Vegetables,Cabbage - pickled,80,,Cabbage%20-%20pickled,2.56900
+236,Vegetables,Cabbage - pre-cut,80,Three heaped serving spoons,Cabbage%20-%20pre-cut,1.37200
+501,Cupboard,Cacao nibs,0,,Cacao%20nibs,2.65500
+480,Cupboard,Cacao powder,0,,Cacao%20powder,4.44000
+5,Bakery,Cake,0,,Cake,3.06425
+400,Bakery,Cake - chocolate,0,,Cake%20-%20chocolate,3.66809
+401,Bakery,Cake - fruit,0,,Cake%20-%20fruit,3.06425
+403,Bakery,Cake - sponge,0,,Cake%20-%20sponge,3.06425
+290,Drinks,Cappuccino,140,Small Cappuccino,Cappuccino,1.61270
+237,Vegetables,Carrot,80,Three heaped serving spoons,Carrot,1.13280
+238,Vegetables,Carrots - canned,80,Three heaped serving spoons,Carrots%20-%20canned,1.92600
+239,Vegetables,Carrots - frozen,80,Three heaped serving spoons,Carrots%20-%20frozen,2.44300
+240,Vegetables,Carrots - pre-chopped,80,Three heaped serving spoons,Carrots%20-%20pre-chopped,2.16100
+191,Nuts and seeds,Cashew nuts,20,About the amount that fits in your palm,Cashew%20nuts,2.09143
+19,Cupboard,Cassava Starch,0,,Cassava%20Starch,0.59400
+241,Vegetables,Cauliflower,80,Three heaped serving spoons,Cauliflower,0.97080
+242,Vegetables,Cauliflower - frozen,80,Three heaped serving spoons,Cauliflower%20-%20frozen,2.27080
+243,Vegetables,Cauliflower - pre-cut,80,Three heaped serving spoons,Cauliflower%20-%20pre-cut,2.02080
+465,Cupboard,Cayenne pepper,3,One teaspoon,Cayenne%20pepper,1.13250
+244,Vegetables,Celery,80,Three sticks of celery,Celery,0.84400
+30,Dairy and alternatives,Cheese,30,About the size of two thumbs,Cheese,8.78695
+371,Dairy and alternatives,Cheese - brie,30,About the size of two thumbs,Cheese%20-%20brie,7.41667
+377,Dairy and alternatives,Cheese - camambert,30,About the size of two thumbs,Cheese%20-%20camambert,7.11065
+370,Dairy and alternatives,Cheese - cheddar,30,About the size of two thumbs,Cheese%20-%20cheddar,7.41667
+384,Dairy and alternatives,Cheese - cottage,30,About the size of two thumbs,Cheese%20-%20cottage,2.44500
+383,Dairy and alternatives,Cheese - cream,30,About the size of two thumbs,Cheese%20-%20cream,6.44000
+375,Dairy and alternatives,Cheese - edam,30,About the size of two thumbs,Cheese%20-%20edam,7.11065
+379,Dairy and alternatives,Cheese - emmental,30,About the size of two thumbs,Cheese%20-%20emmental,7.11065
+378,Dairy and alternatives,Cheese - feta,30,About the size of two thumbs,Cheese%20-%20feta,7.11065
+376,Dairy and alternatives,Cheese - goats,30,About the size of two thumbs,Cheese%20-%20goats,7.11065
+372,Dairy and alternatives,Cheese - gouda,30,About the size of two thumbs,Cheese%20-%20gouda,7.41667
+374,Dairy and alternatives,Cheese - mascarpone,30,About the size of two thumbs,Cheese%20-%20mascarpone,7.41667
+382,Dairy and alternatives,Cheese - mozzarella,30,About the size of two thumbs,Cheese%20-%20mozzarella,6.44000
+380,Dairy and alternatives,Cheese - paneer,30,About the size of two thumbs,Cheese%20-%20paneer,7.11065
+381,Dairy and alternatives,Cheese - parmesan,30,About the size of two thumbs,Cheese%20-%20parmesan,7.11065
+373,Dairy and alternatives,Cheese - prato,30,About the size of two thumbs,Cheese%20-%20prato,7.41667
+385,Dairy and alternatives,Cheese - quark,30,About the size of two thumbs,Cheese%20-%20quark,2.44500
+369,Dairy and alternatives,Cheese - stilton,30,About the size of two thumbs,Cheese%20-%20stilton,7.41667
+6,Bakery,Cheesecake,0,,Cheesecake,5.48242
+467,Fruit,Cherries,32,"One handful, eight cherries",Cherries,2.86000
+468,Fruit,Cherries - frozen,32,"One handful, eight cherries",Cherries%20-%20frozen,2.52000
+193,Nuts and seeds,Chestnuts,20,About the amount that fits in your palm,Chestnuts,1.46000
+466,Nuts and seeds,Chia seeds,0,,Chia%20seeds,4.20000
+170,Meat and alternatives,Chicken,160,About half the size of your hand,Chicken,4.70605
+277,Processed food,Chicken Korma Curry - ready meal,360,Standard ready meal,Chicken%20Korma%20Curry%20-%20ready%20meal,8.05556
+278,Processed food,Chicken Noodles - ready meal,360,Standard ready meal,Chicken%20Noodles%20-%20ready%20meal,7.22222
+279,Processed food,Chicken Roast - ready meal,360,Standard ready meal,Chicken%20Roast%20-%20ready%20meal,6.94444
+150,"Grains, pulses, and legumes",Chickpeas,80,Three heaped serving spoons,Chickpeas,0.85195
+441,Cupboard,Chilli flakes,0,,Chilli%20flakes,1.13250
+422,Vegetables,Chilli pepper,15,"Small, fresh chilli pepper",Chilli%20pepper,2.01920
+423,Vegetables,Chilli pepper - jalepeno,15,"Small, fresh chilli pepper",Chilli%20pepper%20-%20jalepeno,2.01920
+448,Cupboard,Chilli powder,3,One teaspoon,Chilli%20powder,1.13250
+213,Processed food,Chips,80,,Chips,3.82200
+494,Cupboard,Chives,0,,Chives,1.13250
+13,Biscuits and confectionery,Chocolate,30,6 squares of chocolate,Chocolate,5.76333
+14,Biscuits and confectionery,Chocolate biscuit,0,,Chocolate%20biscuit,2.70000
+415,Biscuits and confectionery,Chocolate chips,0,,Chocolate%20chips,5.76333
+348,"Spreads, jams, and honeys",Chocolate spread,37,2 tablespoons,Chocolate%20spread,4.38825
+545,Sauces and dressings,Chutney,40,2 tablespoons,Chutney,1.65629
+488,Drinks,Cider bottle,500,1 bottle,Cider%20bottle,0.87600
+489,Drinks,Cider can,330,1 can,Cider%20can,0.65965
+433,Cupboard,Cinnamon,3,One teaspoon,Cinnamon,1.13250
+59,Fish and seafood,Clams,0,,Clams,3.03643
+492,Cupboard,Cloves,3,One teaspoon,Cloves,1.13250
+60,Fish and seafood,Cockles,0,,Cockles,3.03643
+171,Meat and alternatives,Cocktail sausage,45,4 cocktail sausages,Cocktail%20sausage,6.62826
+478,Cupboard,Cocoa drink powder,0,,Cocoa%20drink%20powder,4.44000
+198,Oils,Coconut oil,14,1 tablespoon oil,Coconut%20oil,2.41472
+473,Cupboard,Coconut sugar,4,1 teaspoon,Coconut%20sugar,0.65599
+61,Fish and seafood,Cod,170,The size of half to a whole hand,Cod,3.21375
+516,Cupboard,Coffee beans,0,,Coffee%20beans,4.50000
+62,Fish and seafood,Coley,170,The size of half to a whole hand,Coley,4.36243
+476,Cupboard,Coriander,3,One teaspoon,Coriander,1.13250
+151,"Grains, pulses, and legumes",Corn,120,About 6 tablespoons,Corn,0.40500
+214,Processed food,Corn crisps,80,One bag ,Corn%20crisps,1.32500
+199,Oils,Corn oil,14,1 tablespoon oil,Corn%20oil,1.19933
+434,Cupboard,Cornflour,0,,Cornflour,0.89116
+274,Processed food,Cottage Pie - ready meal,360,Standard ready meal,Cottage%20Pie%20-%20ready%20meal,11.94444
+200,Oils,Cottonseed oil,14,1 tablespoon oil,Cottonseed%20oil,2.14000
+245,Vegetables,Courgette,80,Three heaped serving spoons,Courgette,0.86060
+152,"Grains, pulses, and legumes",Couscous,120,About 6 tablespoons,Couscous,2.44036
+63,Fish and seafood,Crab,0,,Crab,17.74555
+15,Biscuits and confectionery,Crackers,24,3 crackers,Crackers,1.15500
+110,Fruit,Cranberries,80,,Cranberries,2.86000
+111,Fruit,Cranberries - frozen,80,,Cranberries%20-%20frozen,2.52000
+64,Fish and seafood,Crayfish,0,,Crayfish,17.74555
+418,Dairy and alternatives,Cream - clotted,50,,Cream%20-%20clotted,3.72404
+416,Dairy and alternatives,Cream - double,50,,Cream%20-%20double,3.72404
+35,Dairy and alternatives,Cream - plant-based,50,,Cream%20-%20plant-based,1.87250
+31,Dairy and alternatives,Cream - single,50,,Cream%20-%20single,3.72404
+417,Dairy and alternatives,Cream - whipping,50,,Cream%20-%20whipping,3.72404
+409,Bakery,Crepe,0,,Crepe,0.71148
+215,Processed food,Crisps,25,A small multipack bag of crisps,Crisps,4.41000
+7,Bakery,Crumpet,50,1 crumpet,Crumpet,1.21499
+246,Vegetables,Cucumber,80,5cm piece of cucumber,Cucumber,1.92800
+247,Vegetables,Cucumber - pickled,80,,Cucumber%20-%20pickled,4.07400
+464,Cupboard,Cumin,3,One teaspoon,Cumin,1.13250
+490,Fruit,Currants,80,One heaped serving spoon,Currants,2.10000
+216,Processed food,Custard,0,,Custard,2.45427
+463,Fruit,Date,48,Two dates,Date,2.10000
+483,Cupboard,Dill,0,,Dill,1.13250
+404,Bakery,Doughnut,0,,Doughnut,6.57930
+248,Vegetables,Dried peas (shelled),80,Three heaped serving spoons,Dried%20peas%20(shelled),2.38800
+172,Meat and alternatives,Duck,160,About half the size of your hand,Duck,5.05438
+65,Fish and seafood,Eel,0,,Eel,4.22019
+57,Eggs,Eggs,120,2 eggs,Eggs,4.50569
+288,Drinks,Espresso,30,One shot of espresso,Espresso,0.70570
+153,"Grains, pulses, and legumes",Faba beans,80,Three heaped serving spoons,Faba%20beans,0.85195
+173,Meat and alternatives,Falafel,40,2 falafels,Falafel,2.51000
+456,Nuts and seeds,Fennel seeds,0,,Fennel%20seeds,4.20000
+356,Sauces and dressings,Fish sauce,18,1 tablespoon,Fish%20sauce,0.22176
+66,Fish and seafood,Fish sticks,100,,Fish%20sticks,1.90558
+280,Processed food,Fisherman Pie,360,Standard ready meal,Fisherman%20Pie,7.77778
+503,Cupboard,Five spice,3,One teaspoon,Five%20spice,1.13250
+398,Biscuits and confectionery,Flapjacks,0,,Flapjacks,6.84001
+292,Drinks,Flat White,160,Small Flat White,Flat%20White,1.61270
+67,Fish and seafood,Flatfish,170,The size of half to a whole hand,Flatfish,4.36243
+68,Fish and seafood,Flounder,170,The size of half to a whole hand,Flounder,4.36243
+167,Cupboard,Flour - plain,0,,Flour%20-%20plain,0.89116
+323,Cupboard,Flour - rye,0,,Flour%20-%20rye,0.70889
+322,Cupboard,Flour - self-raising,0,,Flour%20-%20self-raising,0.89116
+533,Cupboard,Food colouring,5,1 teaspoon,Food%20colouring,0.65599
+69,Fish and seafood,Frozen fish fingers,90,3 fish fingers,Frozen%20fish%20fingers,3.74650
+154,"Grains, pulses, and legumes",Frozen pulses,80,Three heaped serving spoons,Frozen%20pulses,1.83445
+543,Drinks,Fruit cordial,50,Enough cordial for a medium glass,Fruit%20cordial,1.92710
+529,Drinks,Fruit juice,150,One small glass,Fruit%20juice,1.71099
+8,Bakery,Fruit pie,0,,Fruit%20pie,1.57785
+332,Drinks,Fruit tea,400,Normal-sized cup of tea.,Fruit%20tea,0.60516
+535,Biscuits and confectionery,Fudge,0,,Fudge,2.41213
+174,Meat and alternatives,Gammon,150,Use the size of pack as a guide,Gammon,6.62826
+502,Cupboard,Garam Masala,3,One teaspoon,Garam%20Masala,1.13250
+321,Vegetables,Garlic,3,1 clove,Garlic,0.45235
+459,Vegetables,Ginger,7,One thumb or a tablespoon of chopped ginger,Ginger,0.45235
+16,Biscuits and confectionery,Gluten-free biscuit,0,,Gluten-free%20biscuit,3.30000
+175,Meat and alternatives,Goat,160,About half the size of your hand,Goat,35.71429
+428,"Spreads, jams, and honeys",Golden syrup,22,1 tablespoon,Golden%20syrup,0.65599
+176,Meat and alternatives,Goose,160,About half the size of your hand,Goose,5.05438
+362,Cupboard,Granola,40,About 3 handfuls,Granola,4.01636
+49,Drinks,Grapefruit juice,150,One small glass,Grapefruit%20juice,2.06000
+112,Fruit,Grapefruits,80,Half a grapefruit,Grapefruits,0.80000
+113,Fruit,Grapes,80,,Grapes,2.30000
+350,Sauces and dressings,Gravy - beef,50,,Gravy%20-%20beef,0.22176
+387,Sauces and dressings,Gravy - chicken,50,,Gravy%20-%20chicken,0.22176
+388,Sauces and dressings,Gravy - vegetable,50,,Gravy%20-%20vegetable,0.22176
+249,Vegetables,Green beans,80,Three heaped serving spoons,Green%20beans,5.66840
+250,Vegetables,Green beans - canned,80,Three heaped serving spoons,Green%20beans%20-%20canned,1.53160
+251,Vegetables,Green beans - frozen,80,Three heaped serving spoons,Green%20beans%20-%20frozen,1.68460
+330,Drinks,Green tea,400,Normal-sized cup of tea.,Green%20tea,0.60516
+201,Oils,Groundnut oil,14,1 tablespoon oil,Groundnut%20oil,0.90000
+177,Meat and alternatives,Guinea fowl,125,About half the size of your hand,Guinea%20fowl,5.05438
+70,Fish and seafood,Haddock,170,The size of half to a whole hand,Haddock,4.36243
+71,Fish and seafood,Hake,170,The size of half to a whole hand,Hake,4.36243
+72,Fish and seafood,Halibut,170,The size of half to a whole hand,Halibut,4.36243
+178,Meat and alternatives,Ham,30,2 slices,Ham,6.62826
+469,"Grains, pulses, and legumes",Haricot beans,80,Three heaped serving spoons,Haricot%20beans,0.85195
+220,"Spreads, jams, and honeys",Hazelnut paste,40,2 tablespoons,Hazelnut%20paste,1.26646
+221,"Spreads, jams, and honeys",Hazelnut spread,40,2 tablespoons,Hazelnut%20spread,2.71000
+194,Nuts and seeds,Hazelnuts - chocolate covered,20,About the amount that fits in your palm,Hazelnuts%20-%20chocolate%20covered,3.43000
+329,Drinks,Herbal tea,400,Normal-sized cup of tea.,Herbal%20tea,0.60516
+20,Cupboard,Herbs and spices,0,,Herbs%20and%20spices,1.13250
+73,Fish and seafood,Herring,170,The size of half to a whole hand,Herring,1.58600
+74,Fish and seafood,Hoki,170,The size of half to a whole hand,Hoki,4.36243
+222,"Spreads, jams, and honeys",Honey,40,2 tablespoons,Honey,1.65730
+46,Drinks,Hot chocolate - made with milk,0,,Hot%20chocolate%20-%20made%20with%20milk,2.72729
+45,Drinks,Hot chocolate - made with water,0,,Hot%20chocolate%20-%20made%20with%20water,0.08600
+461,Sauces and dressings,Hummus,16,One tablespoon,Hummus,0.85195
+410,Dairy and alternatives,Ice cream,70,1 scoop of ice cream,Ice%20cream,3.80167
+487,Cupboard,Icing - to roll,0,,Icing%20-%20to%20roll,0.65599
+286,Drinks,Instant Coffee - black,400,Normal-sized mug of coffee,Instant%20Coffee%20-%20black,0.70570
+287,Drinks,Instant Coffee - with milk,400,Normal-sized mug of coffee,Instant%20Coffee%20-%20with%20milk,1.61270
+223,"Spreads, jams, and honeys",Jam,40,2 tablespoons,Jam,2.14587
+331,Drinks,Jasmin tea,400,Normal-sized cup of tea.,Jasmin%20tea,0.60516
+474,Vegetables,Kale,80,Three heaped serving spoons,Kale,1.60930
+155,"Grains, pulses, and legumes",Kidney beans,80,Three heaped serving spoons,Kidney%20beans,0.85195
+75,Fish and seafood,Kipper,170,The size of half to a whole hand,Kipper,4.22019
+333,Fruit,Kiwi,76,Average weight of a medium kiwi fruit,Kiwi,0.62093
+76,Fish and seafood,Krill,0,,Krill,17.74555
+179,Meat and alternatives,Lamb,140,Use the size of pack as a guide,Lamb,20.82537
+282,Processed food,Lamb Masala Curry - ready meal,360,Standard ready meal,Lamb%20Masala%20Curry%20-%20ready%20meal,13.61111
+283,Processed food,Lamb Roast - ready meal,360,Standard ready meal,Lamb%20Roast%20-%20ready%20meal,9.16667
+505,Cupboard,Lard,16,1 tablespoon,Lard,6.11647
+289,Drinks,Latte,240,Small Latte,Latte,1.61270
+342,Vegetables,Leek,80,,Leek,1.05120
+50,Drinks,Lemon Juice,0,,Lemon%20Juice,0.62160
+77,Fish and seafood,Lemon sole,170,The size of half to a whole hand,Lemon%20sole,4.36243
+114,Fruit,Lemons,80,One lemon,Lemons,1.90000
+156,"Grains, pulses, and legumes",Lentils,120,About 6 tablespoons,Lentils,0.67038
+252,Vegetables,Lettuce,80,Three heaped serving spoons,Lettuce,1.60930
+253,Vegetables,Lettuce - pre-cut,80,Three heaped serving spoons,Lettuce%20-%20pre-cut,2.06340
+440,Fruit,Lime,45,One lime,Lime,1.90000
+477,Drinks,Lime Juice,0,,Lime%20Juice,0.62160
+412,Biscuits and confectionery,Liquorice,0,,Liquorice,2.41213
+78,Fish and seafood,Lobster,0,,Lobster,17.74555
+528,"Grains, pulses, and legumes",Macaroni,75,2 handfuls. Use your finger and thumb to measure a bunch the size of a £1 coin,Macaroni,1.37431
+79,Fish and seafood,Mackerel,170,The size of half to a whole hand,Mackerel,0.89500
+157,"Grains, pulses, and legumes",Maize,120,About 6 tablespoons,Maize,0.51000
+115,Fruit,Mandarins,80,Two mandarins,Mandarins,1.10000
+116,Fruit,Mandarins - canned,80,Half a can ,Mandarins%20-%20canned,2.50000
+117,Fruit,Mangoes,80,Two slices of mango (5cm slices).,Mangoes,4.40000
+118,Fruit,Mangoes - canned,80,Half a can ,Mangoes%20-%20canned,4.40000
+119,Fruit,Mangoes - dried,30,One heaped serving spoon,Mangoes%20-%20dried,8.70000
+120,Fruit,Mangoes - frozen,80,Two slices of mango (5cm slices).,Mangoes%20-%20frozen,3.80000
+429,"Spreads, jams, and honeys",Maple syrup,22,1 tablespoon,Maple%20syrup,0.65599
+349,"Spreads, jams, and honeys",Marmalade,40,2 tablespoons,Marmalade,2.14587
+347,Sauces and dressings,Marmite,8,one tablespoon,Marmite,1.66042
+532,Biscuits and confectionery,Marshmallows,0,,Marshmallows,2.41213
+536,Cupboard,Marzipan,0,,Marzipan,1.65730
+344,Sauces and dressings,Mayonnaise,14,one tablespoon,Mayonnaise,4.02956
+180,Meat and alternatives,Meatless,0,,Meatless,2.29000
+121,Fruit,Melons,80,One 5cm slice of melon,Melons,0.90000
+33,Dairy and alternatives,Milk,200,One small glass. Milk on cereal would be 125ml,Milk,1.76166
+26,Dairy and alternatives,Milk - almond,200,One small glass. Milk on cereal would be 125ml,Milk%20-%20almond,0.56500
+27,Dairy and alternatives,Milk - buffalo,200,One small glass. Milk on cereal would be 125ml,Milk%20-%20buffalo,3.38000
+34,Dairy and alternatives,Milk - concentrated,0,,Milk%20-%20concentrated,3.10000
+32,Dairy and alternatives,Milk - goats,200,One small glass. Milk on cereal would be 125ml,Milk%20-%20goats,2.67000
+453,Dairy and alternatives,Milk - plant-based,200,One small glass. Milk on cereal would be 125ml,Milk%20-%20plant-based,0.54509
+37,Dairy and alternatives,Milk - sheeps,200,One small glass. Milk on cereal would be 125ml,Milk%20-%20sheeps,8.40000
+39,Dairy and alternatives,Milk - soy,200,One small glass. Milk on cereal would be 125ml,Milk%20-%20soy,0.78202
+435,Cupboard,Mint,0,,Mint,1.13250
+413,Biscuits and confectionery,Mints,0,,Mints,2.41213
+452,Sauces and dressings,Mirin,16,1 tablespoon,Mirin,0.22176
+451,Cupboard,Miso paste,15,1 tablespoon,Miso%20paste,0.22176
+521,Nuts and seeds,Mixed nuts,20,About the amount that fits in your palm,Mixed%20nuts,2.05586
+523,Nuts and seeds,Mixed seeds,0,,Mixed%20seeds,2.97837
+293,Drinks,Mocha,120,Small Mocha,Mocha,1.61270
+361,Cupboard,Muesli,40,About 3 handfuls,Muesli,1.01500
+158,"Grains, pulses, and legumes",Muesli,50,About 3 handfuls,Muesli,1.01500
+405,Bakery,Muffin,0,,Muffin,6.57930
+343,Vegetables,Mushrooms,80,Three heaped serving spoons,Mushrooms,1.40454
+80,Fish and seafood,Mussels,0,,Mussels,3.03643
+460,Sauces and dressings,Mustard,16,1 tablespoon,Mustard,0.22176
+202,Oils,Mustard oil,14,1 tablespoon oil,Mustard%20oil,2.90000
+9,Bakery,Naan bread - plain,70,1/2 naan,Naan%20bread%20-%20plain,1.21499
+122,Fruit,Nectarines,80,One nectarine,Nectarines,1.90000
+123,Fruit,Nectarines - canned,80,Half a can ,Nectarines%20-%20canned,2.90000
+124,Fruit,Nectarines - frozen,80,One nectarine,Nectarines%20-%20frozen,2.50000
+393,"Grains, pulses, and legumes",Noodles,75,"Weight of uncooked noodles, usually ready-portioned",Noodles,1.37431
+443,Cupboard,Nutmeg,3,One teaspoon,Nutmeg,1.13250
+363,Cupboard,Oat flakes,40,About 3 handfuls,Oat%20flakes,0.79000
+296,Dairy and alternatives,Oatly Oat Drink,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink,0.31833
+297,Dairy and alternatives,Oatly Oat Drink - Barista Edition,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Barista%20Edition,0.37556
+298,Dairy and alternatives,Oatly Oat Drink - Calcium,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Calcium,0.28333
+299,Dairy and alternatives,Oatly Oat Drink - Calcium Organic,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Calcium%20Organic,0.39500
+300,Dairy and alternatives,Oatly Oat Drink - Chocolate,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Chocolate,0.35000
+301,Dairy and alternatives,Oatly Oat Drink - Chocolate Deluxe,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Chocolate%20Deluxe,0.33000
+302,Dairy and alternatives,Oatly Oat Drink - Deluxe,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Deluxe,0.30000
+311,Dairy and alternatives,"Oatly Oat Drink - Deluxe (Germany, Austria, Netherlands)",200,One small glass. Milk on cereal would be 125ml,"Oatly%20Oat%20Drink%20-%20Deluxe%20(Germany,%20Austria,%20Netherlands)",0.68500
+303,Dairy and alternatives,Oatly Oat Drink - Low-Fat,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Low-Fat,0.39000
+304,Dairy and alternatives,Oatly Oat Drink - Low-Fat Organic,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Low-Fat%20Organic,0.29000
+305,Dairy and alternatives,Oatly Oat Drink - Orange Mango,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Orange%20Mango,0.38500
+306,Dairy and alternatives,Oatly Oat Drink - Organic,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Organic,0.32125
+307,Dairy and alternatives,Oatly Oat Drink - Semi-skimmed,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Semi-skimmed,0.51500
+308,Dairy and alternatives,Oatly Oat Drink - Semi-skimmed Organic,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Semi-skimmed%20Organic,0.31500
+309,Dairy and alternatives,Oatly Oat Drink - Vanilla,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Vanilla,0.43000
+310,Dairy and alternatives,Oatly Oat Drink - Vanilla Organic,200,One small glass. Milk on cereal would be 125ml,Oatly%20Oat%20Drink%20-%20Vanilla%20Organic,0.35000
+159,"Grains, pulses, and legumes",Oats,120,About 6 tablespoons,Oats,0.78500
+81,Fish and seafood,Octopus,0,,Octopus,3.03643
+203,Oils,Olive oil,14,1 tablespoon oil,Olive%20oil,2.52582
+334,Fruit,Olives,20,Average weight of 5 olives,Olives,0.46313
+254,Vegetables,Onion,80,1 onion,Onion,1.05120
+255,Vegetables,Onion - frozen,80,Three heaped serving spoons,Onion%20-%20frozen,2.30800
+256,Vegetables,Onion - pickled,80,,Onion%20-%20pickled,2.54280
+51,Drinks,Orange juice,150,One small glass,Orange%20juice,2.00000
+125,Fruit,Oranges,80,One orange,Oranges,1.90000
+438,Cupboard,Oregano,0,,Oregano,1.13250
+160,"Grains, pulses, and legumes",Other pulses,120,About 6 tablespoons,Other%20pulses,3.30000
+54,Drinks,Other spirits,50,two 25ml shots,Other%20spirits,2.32030
+355,Sauces and dressings,Oyster sauce,18,1 tablespoon,Oyster%20sauce,0.22176
+82,Fish and seafood,Oysters,0,,Oysters,3.03643
+204,Oils,Palm oil,14,1 tablespoon oil,Palm%20oil,6.11647
+407,Bakery,Pancake,0,,Pancake,0.71148
+525,Meat and alternatives,Pancetta,30,2 slices,Pancetta,6.62826
+83,Fish and seafood,Pangasius,0,,Pangasius,4.36243
+542,Fruit,Papaya,80,,Papaya,4.40000
+437,Cupboard,Paprika,0,,Paprika,1.13250
+436,Cupboard,Parsley,0,,Parsley,1.13250
+335,Vegetables,Parsnips,80,Recommended portion size,Parsnips,0.67763
+497,Fruit,Passata,80,Three heaped serving spoons,Passata,1.95860
+161,"Grains, pulses, and legumes",Pasta,75,2 handfuls. For spaghetti: use your finger and thumb to measure a bunch the size of a £1 coin,Pasta,1.37431
+392,"Grains, pulses, and legumes",Pasta - wholemeal,75,2 handfuls. For spaghetti: use your finger and thumb to measure a bunch the size of a £1 coin,Pasta%20-%20wholemeal,1.37431
+406,Bakery,Pastry,0,,Pastry,6.57930
+126,Fruit,Peaches,80,One peach,Peaches,1.90000
+127,Fruit,Peaches - canned,80,Half a can ,Peaches%20-%20canned,2.90000
+128,Fruit,Peaches - frozen,80,One peach,Peaches%20-%20frozen,2.50000
+195,Nuts and seeds,Peanut,20,About the amount that fits in your palm,Peanut,1.36000
+224,"Spreads, jams, and honeys",Peanut butter,40,2 tablespoons,Peanut%20butter,2.10667
+205,Oils,Peanut oil,14,1 tablespoon oil,Peanut%20oil,3.63727
+129,Fruit,Pears,80,One pear,Pears,1.02800
+130,Fruit,Pears - canned,80,Half a can ,Pears%20-%20canned,4.06000
+131,Fruit,Pears - dried,30,One heaped serving spoon,Pears%20-%20dried,6.95600
+257,Vegetables,Peas,80,Three heaped serving spoons,Peas,4.22800
+258,Vegetables,Peas - dried and canned,80,Three heaped serving spoons,Peas%20-%20dried%20and%20canned,2.32400
+259,Vegetables,Peas - frozen,80,Three heaped serving spoons,Peas%20-%20frozen,2.50800
+260,Vegetables,Peas - shelled and canned,80,Three heaped serving spoons,Peas%20-%20shelled%20and%20canned,2.47600
+338,Vegetables,"Peas - split, canned",80,Three heaped serving spoons,"Peas%20-%20split,%20canned",2.32400
+470,Nuts and seeds,Pecan,20,About the amount that fits in your palm,Pecan,2.12900
+508,Cupboard,Peppermint extract,5,1 teaspoon,Peppermint%20extract,0.65599
+421,Vegetables,Peppers,80,Three heaped serving spoons,Peppers,2.01920
+420,Vegetables,Peppers - green,80,Three heaped serving spoons,Peppers%20-%20green,2.01920
+262,Vegetables,Peppers - pickled,80,,Peppers%20-%20pickled,3.83960
+261,Vegetables,Peppers - red,80,Three heaped serving spoons,Peppers%20-%20red,2.01920
+537,Sauces and dressings,Pesto,14,1 tablespoon,Pesto,2.52582
+52,Drinks,Pineapple juice,150,One small glass,Pineapple%20juice,2.52273
+132,Fruit,Pineapples,80,One large slice of pineapple,Pineapples,1.70000
+133,Fruit,Pineapples - canned,80,One large slice of pineapple,Pineapples%20-%20canned,3.60000
+134,Fruit,Pineapples - dried,30,One heaped serving spoon,Pineapples%20-%20dried,4.90000
+196,Nuts and seeds,Pistachio,20,About the amount that fits in your palm,Pistachio,2.33000
+10,Bakery,Pitta bread,60,"2 small, one medium pitta",Pitta%20bread,1.21499
+217,Processed food,Pizza,250,1 small/medium sized pizza,Pizza,3.83425
+84,Fish and seafood,Plaice,170,The size of half to a whole hand,Plaice,4.36243
+36,Dairy and alternatives,Plant-based spread,14,1 tablespoon,Plant-based%20spread,3.08086
+135,Fruit,Plums,80,Two plums,Plums,1.12500
+136,Fruit,Plums - canned,80,Half a can ,Plums%20-%20canned,5.49000
+137,Fruit,Plums - dried,30,One heaped serving spoon,Plums%20-%20dried,4.44000
+500,"Grains, pulses, and legumes",Polenta,120,About 6 tablespoons,Polenta,0.76008
+85,Fish and seafood,Pollock,170,The size of half to a whole hand,Pollock,3.21375
+181,Meat and alternatives,Pork,150,Use the size of pack as a guide,Pork,6.62826
+281,Processed food,Pork and Prawns Fried Rice - ready meal,360,Standard ready meal,Pork%20and%20Prawns%20Fried%20Rice%20-%20ready%20meal,7.77778
+285,Processed food,Pork Roast - ready meal,360,Standard ready meal,Pork%20Roast%20-%20ready%20meal,5.83333
+162,Cupboard,Porridge,45,About 1 and a half handfuls,Porridge,3.95813
+211,Potatoes,Potatoes,220,"1 baked potato, about the size of your fist",Potatoes,1.27300
+86,Fish and seafood,Prawn,80,About 4 tablespoons,Prawn,17.74555
+475,Nuts and seeds,Pumpkin seeds,0,,Pumpkin%20seeds,4.20000
+163,"Grains, pulses, and legumes",Quinoa,120,About 6 tablespoons,Quinoa,0.81581
+182,Meat and alternatives,Quorn,100,Use the size of pack as a guide,Quorn,2.40000
+316,Meat and alternatives,Quorn Classic Burger,90,,Quorn%20Classic%20Burger,2.55000
+317,Meat and alternatives,Quorn Crispy Nuggets,80,,Quorn%20Crispy%20Nuggets,1.96667
+314,Meat and alternatives,Quorn Mince,75,,Quorn%20Mince,1.69091
+315,Meat and alternatives,"Quorn Mince (Australia, New Zealand, and Asia)",75,,"Quorn%20Mince%20(Australia,%20New%20Zealand,%20and%20Asia)",3.73333
+312,Meat and alternatives,Quorn Pieces,75,,Quorn%20Pieces,1.70909
+313,Meat and alternatives,"Quorn Pieces (Australia, New Zealand, and Asia)",75,,"Quorn%20Pieces%20(Australia,%20New%20Zealand,%20and%20Asia)",4.00000
+318,Meat and alternatives,Quorn Sausages,84,,Quorn%20Sausages,1.70000
+319,Meat and alternatives,Quorn Vegan Nuggets,70,,Quorn%20Vegan%20Nuggets,2.55000
+320,Meat and alternatives,Quorn Vegan Pieces,70,,Quorn%20Vegan%20Pieces,1.60000
+183,Meat and alternatives,Rabbit,160,About half the size of your hand,Rabbit,11.01925
+138,Fruit,Raisins,80,One heaped serving spoon,Raisins,2.10000
+206,Oils,Rapeseed oil,14,1 tablespoon oil,Rapeseed%20oil,2.40440
+139,Fruit,Raspberries,80,,Raspberries,2.56900
+140,Fruit,Raspberries - frozen,80,,Raspberries%20-%20frozen,2.30000
+339,Vegetables,Red onion,80,1 onion,Red%20onion,1.05120
+544,Sauces and dressings,Relish,40,2 tablespoons,Relish,1.65629
+522,Vegetables,Rhubarb,80,,Rhubarb,0.84400
+395,"Grains, pulses, and legumes",Rice - basmati,65,About 2 handfuls,Rice%20-%20basmati,1.35377
+394,"Grains, pulses, and legumes",Rice - brown,65,About 2 handfuls,Rice%20-%20brown,1.35377
+396,"Grains, pulses, and legumes",Rice - jasmine,65,About 2 handfuls,Rice%20-%20jasmine,1.35377
+397,"Grains, pulses, and legumes",Rice - long grain,65,About 2 handfuls,Rice%20-%20long%20grain,1.35377
+419,"Grains, pulses, and legumes",Rice - sushi,0,,Rice%20-%20sushi,1.35377
+164,"Grains, pulses, and legumes",Rice - white,65,About 2 handfuls,Rice%20-%20white,1.35377
+524,Vegetables,Rocket,0,,Rocket,1.60930
+445,Cupboard,Rosemary,0,,Rosemary,1.13250
+328,Drinks,Rum,50,two 25ml shots,Rum,2.32030
+507,Cupboard,Sage,3,One teaspoon,Sage,1.13250
+345,Sauces and dressings,Salad cream,14,one tablespoon,Salad%20cream,4.02956
+346,Sauces and dressings,Salad dressing,14,one tablespoon,Salad%20dressing,4.60695
+514,Vegetables,Salad leaves,0,,Salad%20leaves,1.60930
+87,Fish and seafood,Salmon,170,The size of half to a whole hand,Salmon,4.78714
+431,Cupboard,Salt,0,,Salt,1.13250
+88,Fish and seafood,Sardines,80,About 4 tablespoons,Sardines,4.22019
+89,Fish and seafood,Scallops,120,4 scallops,Scallops,3.03643
+272,Fish and seafood,Scampi,80,About 4 tablespoons,Scampi,17.74555
+402,Bakery,Scones,0,,Scones,3.06425
+90,Fish and seafood,Sea bass,170,The size of half to a whole hand,Sea%20bass,4.36243
+91,Fish and seafood,Seabass,170,The size of half to a whole hand,Seabass,4.36243
+538,Fish and seafood,Seaweed,0,,Seaweed,3.03643
+21,Nuts and seeds,Sesame seeds,0,,Sesame%20seeds,4.20000
+207,Oils,Sesameseed oil,14,1 tablespoon oil,Sesameseed%20oil,4.20000
+341,Vegetables,Shallot,40,2 shallots,Shallot,1.05120
+284,Processed food,Shepherds Pie - ready meal,360,Standard ready meal,Shepherds%20Pie%20-%20ready%20meal,12.22222
+295,Drinks,Sherry,150,One medium glass,Sherry,1.36880
+92,Fish and seafood,Shrimp,80,About 4 tablespoons,Shrimp,17.74555
+93,Fish and seafood,Skate,170,The size of half to a whole hand,Skate,4.36243
+427,Fish and seafood,Smoked salmon,120,The size of half to a whole hand,Smoked%20salmon,4.78714
+414,Biscuits and confectionery,Snack bar - chocolate,0,,Snack%20bar%20-%20chocolate,5.06965
+399,Biscuits and confectionery,Snack bar - muesli,0,,Snack%20bar%20-%20muesli,6.84001
+53,Drinks,Soft drink,330,1 can,Soft%20drink,0.62195
+38,Dairy and alternatives,Sour cream,60,About 2 tablespoons,Sour%20cream,2.50000
+351,Sauces and dressings,Soy sauce,18,1 tablespoon,Soy%20sauce,0.22176
+208,Oils,Soybean oil,14,1 tablespoon oil,Soybean%20oil,1.58282
+165,"Grains, pulses, and legumes",Soybeans,80,Three heaped serving spoons,Soybeans,2.00000
+276,Processed food,Spagheti Bolognese - ready meal,360,Standard ready meal,Spagheti%20Bolognese%20-%20ready%20meal,11.66667
+511,"Grains, pulses, and legumes",Spaghetti,75,2 handfuls. Use your finger and thumb to measure a bunch the size of a £1 coin,Spaghetti,1.37431
+263,Vegetables,Spinach,80,Three heaped serving spoons,Spinach,1.45660
+264,Vegetables,Spinach - canned,80,Three heaped serving spoons,Spinach%20-%20canned,1.78700
+265,Vegetables,Spinach - frozen,80,Three heaped serving spoons,Spinach%20-%20frozen,1.57100
+340,Vegetables,Spring onion,40,2 spring onions,Spring%20onion,1.05120
+266,Vegetables,Squash,80,Three heaped serving spoons,Squash,1.16200
+94,Fish and seafood,Squid,0,,Squid,3.03643
+484,Meat and alternatives,Steak,225,One 8oz steak,Steak,43.33033
+352,Sauces and dressings,Stir fry sauce,18,1 tablespoon,Stir%20fry%20sauce,0.22176
+389,Sauces and dressings,Stock - beef,240,1 cup of stock,Stock%20-%20beef,0.22176
+390,Sauces and dressings,Stock - chicken,240,1 cup of stock,Stock%20-%20chicken,0.22176
+442,Sauces and dressings,Stock - lamb,240,1 cup of stock,Stock%20-%20lamb,0.22176
+391,Sauces and dressings,Stock - vegetable,240,1 cup of stock,Stock%20-%20vegetable,0.22176
+141,Fruit,Strawberries,80,7 strawberries,Strawberries,2.24320
+142,Fruit,Strawerries - frozen,80,7 strawberries,Strawerries%20-%20frozen,2.33350
+386,Cupboard,Sugar - brown,4,1 teaspoon,Sugar%20-%20brown,0.65599
+486,Cupboard,Sugar - icing,8,1 tablespoon,Sugar%20-%20icing,0.65599
+22,Cupboard,Sugar - white,4,1 teaspoon,Sugar%20-%20white,0.65599
+209,Oils,Sunflower oil,14,1 tablespoon oil,Sunflower%20oil,2.54467
+498,Nuts and seeds,Sunflower seeds,3,1 teaspoon,Sunflower%20seeds,0.84844
+337,Vegetables,Swedes,80,Recommended portion size,Swedes,0.67763
+449,Potatoes,Sweet potato,115,1 medium sweet potato,Sweet%20potato,1.27300
+267,Vegetables,Sweetcorn - canned,80,Three heaped serving spoons,Sweetcorn%20-%20canned,2.60500
+268,Vegetables,Sweetcorn - frozen,80,Three heaped serving spoons,Sweetcorn%20-%20frozen,2.52410
+269,Vegetables,Sweetcorn - on the cob,80,Three heaped serving spoons,Sweetcorn%20-%20on%20the%20cob,1.57560
+270,Vegetables,Sweetcorn - packaged,80,Three heaped serving spoons,Sweetcorn%20-%20packaged,2.40640
+17,Biscuits and confectionery,Sweets,0,,Sweets,2.41213
+18,Biscuits and confectionery,Sweets - milk-based,0,,Sweets%20-%20milk-based,4.21000
+527,"Grains, pulses, and legumes",Tagliatelle,75,2 handfuls. Use your finger and thumb to measure a bunch the size of a £1 coin,Tagliatelle,1.37431
+462,Sauces and dressings,Tahini,16,One tablespoon,Tahini,0.85195
+472,Sauces and dressings,Tamari,18,1 tablespoon,Tamari,0.22176
+447,Cupboard,Tapioca starch,0,,Tapioca%20starch,0.59400
+294,Drinks,Tea - with milk,400,Normal-sized cup of tea with a dash of milk,Tea%20-%20with%20milk,0.63116
+184,Meat and alternatives,Tempeh,80,Use the size of pack as a guide,Tempeh,1.09300
+324,Drinks,Tequila,50,two 25ml shots,Tequila,2.32030
+455,Cupboard,Thyme,0,,Thyme,1.13250
+411,Biscuits and confectionery,Toffee,0,,Toffee,2.41213
+185,Meat and alternatives,Tofu,80,Use the size of pack as a guide,Tofu,1.85622
+218,Sauces and dressings,Tomato ketchup,40,2 tablespoons,Tomato%20ketchup,1.54020
+219,Processed food,Tomato paste,80,,Tomato%20paste,4.74860
+358,Sauces and dressings,Tomato sauce,175,Half a jar,Tomato%20sauce,2.43244
+143,Fruit,Tomatoes,80,One medium tomato or seven cherry tomatoes,Tomatoes,2.90520
+144,Fruit,Tomatoes - bottled,80,Three heaped serving spoons,Tomatoes%20-%20bottled,2.32860
+145,Fruit,Tomatoes - canned,80,Three heaped serving spoons,Tomatoes%20-%20canned,1.95860
+11,Bakery,Tortilla wrap,65,1 wrap,Tortilla%20wrap,1.08099
+510,"Spreads, jams, and honeys",Treacle,22,1 tablespoon,Treacle,0.65599
+95,Fish and seafood,Trout,170,The size of half to a whole hand,Trout,4.22019
+96,Fish and seafood,Tuna - fresh,100,,Tuna%20-%20fresh,10.16480
+186,Meat and alternatives,Turkey,160,About half the size of your hand,Turkey,6.44750
+493,Cupboard,Turmeric,3,One teaspoon,Turmeric,1.13250
+336,Vegetables,Turnips,80,Recommended portion size,Turnips,0.67763
+271,Vegetables,Unshelled peas,80,Three heaped serving spoons,Unshelled%20peas,3.93600
+187,Meat and alternatives,Valess,80,Use the size of pack as a guide,Valess,5.00817
+491,Cupboard,Vanilla,5,1 teaspoon,Vanilla,0.65599
+481,Cupboard,Vanilla extract,5,1 teaspoon,Vanilla%20extract,0.65599
+188,Meat and alternatives,Veal,125,Use the size of pack as a guide,Veal,18.93775
+210,Oils,Vegetable oil,14,1 tablespoon oil,Vegetable%20oil,3.20000
+189,Meat and alternatives,Vegetable Patty,75,1 burger,Vegetable%20Patty,2.95000
+541,Meat and alternatives,Venison,160,About half the size of your hand,Venison,20.98641
+357,Sauces and dressings,Vinegar,18,1 tablespoon,Vinegar,0.22176
+325,Drinks,Vodka,50,Two 25ml shots,Vodka,2.32030
+408,Bakery,Waffle,0,,Waffle,0.71148
+197,Nuts and seeds,Walnut,20,About the amount that fits in your palm,Walnut,2.12900
+454,Drinks,Water,0,,Water,0.00000
+526,Vegetables,Watercress,0,,Watercress,1.60930
+166,"Grains, pulses, and legumes",Wheat,0,,Wheat,0.71846
+326,Drinks,Whiskey,50,two 25ml shots,Whiskey,2.32030
+97,Fish and seafood,Whitebait,80,About 4 tablespoons,Whitebait,4.22019
+98,Fish and seafood,Whiting,170,The size of half to a whole hand,Whiting,4.36243
+56,Drinks,Wine,150,One medium glass,Wine,1.36880
+353,Sauces and dressings,Worcestershire sauce,18,1 tablespoon,Worcestershire%20sauce,0.22176
+450,Cupboard,Xanthan gum,4,1 teaspoon,Xanthan%20gum,0.00000
+458,Cupboard,Yeast,12,1 tablespoon,Yeast,0.00000
+457,Cupboard,Yeast extract,4,1 teaspoon,Yeast%20extract,0.00000
+40,Dairy and alternatives,Yogurt,120,About 4 tablespoons (or see pot for exact weight),Yogurt,2.20007

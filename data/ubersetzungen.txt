@@ -1,0 +1,523 @@
+Piment
+Mandel-Extrakt
+Mandeln
+Americano
+Sardellen
+Apfelsaft
+Apfelmus
+Äpfel
+Äpfel - getrocknet
+Äpfel - gefroren
+Aprikose
+Artischocke
+Spargel
+Spargel - konserviert
+Spargel - gefroren
+Aubergine
+Avocados
+Speck
+Bagel
+Baguette
+Gebackene Bohnen
+Backpulver
+Bananen
+Bananen - zerkleinert
+Bananen - getrocknet
+Barbecue-Sauce
+Gerste
+Basilikum
+Lorbeerblätter
+Rindfleisch
+Rindfleisch-Lasagne - Fertiggericht
+Rinderbraten - Fertiggericht
+Bierflasche
+Bierdose
+Rote Bete
+Rote Beete - eingelegt
+Beeren
+Natriumbikarbonat
+Kekse
+Schwarze Bohnen
+Schwarzer Pfeffer
+Schwarzer Tee
+Brombeeren
+Brombeeren - gefroren
+Blaubeeren
+Blaubeeren - gefroren
+Bolognese-Sauce
+Wasser in Flaschen
+Weinbrand
+Brot
+Brot - braun
+Brot - Roggen
+Weißbrot
+Brotkrümel
+Brötchen
+Brötchen - braun
+Brötchen - weiß
+Frühstückscerealien
+Frühstückscerealien - Nicht-Vollkorn
+Frühstückscerealien - Vollkorn
+Brokkoli
+Rosenkohl
+Rosenkohl - gefroren
+Buchweizen
+Bulgar
+Butter
+Buttermilch
+Kraut
+Kohl - eingelegt
+Kohl - vorgeschnitten
+Kakao-Knabberkerne
+Kakao-Pulver
+Torte
+Kuchen - Schokolade
+Kuchen - Obst
+Kuchen - Biskuit
+Cappuccino
+Karotte
+Karotten - Konserven
+Karotten - gefroren
+Karotten - vorzerkleinert
+Cashewnüsse
+Cassava-Stärke
+Blumenkohl
+Blumenkohl - gefroren
+Blumenkohl - vorgeschnitten
+Cayennepfeffer
+Sellerie
+Käse
+Käse - Brie
+Käse - Camambert
+Käse - Cheddar
+Käse - Hüttenkäse
+Käse - Sahne
+Käse - Edamer
+Käse - Emmentaler
+Käse - Feta
+Käse - Ziegen
+Käse - Gouda
+Käse - Mascarpone
+Käse - Mozzarella
+Käse - Paneer
+Käse - Parmesan
+Käse - Prato
+Käse - Quark
+Käse - Stilton
+Käsekuchen
+Kirschen
+Kirschen - gefroren
+Esskastanien
+Chia-Samen
+Huhn
+Hähnchen Korma Curry - Fertiggericht
+Hähnchen-Nudeln - Fertiggericht
+Hähnchenbraten - Fertiggericht
+Kichererbsen
+Chiliflocken
+Chilischote
+Chilischote - Jalepeno
+Chilipulver
+Chips
+Schnittlauch
+Schokolade
+Schokoladenkeks
+Schokoladenchips
+Schokoladenaufstrich
+Chutney
+Apfelweinflasche
+Apfelwein-Dose
+Zimt
+Muscheln
+Nelken
+Herzmuscheln
+Cocktail-Wurst
+Kakao-Getränkepulver
+Kokosnuss-Öl
+Kokosnuss-Zucker
+Kabeljau
+Kaffeebohnen
+Gerste
+Koriander
+Mais
+Mais-Chips
+Maisöl
+Maismehl
+Cottage Pie - Fertiggericht
+Baumwollsamenöl
+Zucchini
+Couscous
+Krabben
+Kekse
+Preiselbeeren
+Cranberries - gefroren
+Flusskrebse
+Sahne - geronnen
+Sahne - doppelt
+Sahne - pflanzlich
+Sahne - einfach
+Sahne - Schlagsahne
+Krepp
+Chips
+Crumpet
+Gurke
+Gurke - eingelegt
+Kreuzkümmel
+Johannisbeeren
+Vanillepudding
+Dattel
+Dill
+Krapfen
+Getrocknete Erbsen (geschält)
+Ente
+Aal
+Eier
+Espresso
+Faba-Bohnen
+Falafel
+Fenchelsamen
+Fischsauce
+Fischstäbchen
+Fischerkuchen
+Fünf Gewürze
+Pfannkuchen
+Flaches Weiß
+Plattfisch
+Flunder
+Mehl - glatt
+Mehl - Roggen
+Mehl - selbstkochend
+Lebensmittelfarbe
+Gefrorene Fischstäbchen
+Gefrorene Hülsenfrüchte
+Fruchtsirup
+Fruchtsaft
+Fruchtkuchen
+Früchtetee
+Karamell
+Gammon
+Garam Masala
+Knoblauch
+Ingwer
+Glutenfreies Kleingebäck
+Ziege
+Goldener Sirup
+Gans
+Müsli
+Grapefruitsaft
+Grapefruits
+Weintrauben
+Bratensoße - Rindfleisch
+Bratensoße - Huhn
+Bratensoße - Gemüse
+Grüne Bohnen
+Grüne Bohnen - Konserven
+Grüne Bohnen - gefroren
+Grüner Tee
+Erdnussöl
+Perlhuhn
+Schellfisch
+Seehecht
+Heilbutt
+Schinken
+Stangenbohnen
+Haselnusspaste
+Haselnuss-Aufstrich
+Haselnüsse - mit Schokolade überzogen
+Kräutertee
+Kräuter und Gewürze
+Hering
+Hoki
+Honig
+Heiße Schokolade - mit Milch zubereitet
+Heiße Schokolade - mit Wasser zubereitet
+Hummus
+Eiscreme
+Zuckerguss - zum Rollen
+Instantkaffee - schwarz
+Instantkaffee - mit Milch
+Konfitüre
+Jasmintee
+Grünkohl
+Kidneybohnen
+Kipper
+Kiwi
+Krill
+Lamm
+Lamm Masala Curry - Fertiggericht
+Lammbraten - Fertiggericht
+Schmalz
+Latte
+Lauch
+Zitronensaft
+Zitronensohle
+Zitronen
+Linsen
+Kopfsalat
+Kopfsalat - vorgeschnitten
+Limette
+Limettensaft
+Lakritze
+Hummer
+Makkaroni
+Makrele
+Mais
+Mandarinen
+Mandarinen - Konserven
+Mangos
+Mangos - in Dosen
+Mangos - getrocknet
+Mangos - gefroren
+Ahornsirup
+Marmelade
+Marmelade
+Marshmallows
+Marzipan
+Mayonnaise
+Fleischlos
+Melonen
+Milch
+Milch - Mandel
+Milch - Büffel
+Milch - konzentriert
+Milch - Ziegen
+Milch - pflanzlich
+Milch - Schafe
+Milch - Soja
+Minze
+Minze
+Mirin
+Miso-Paste
+Gemischte Nüsse
+Gemischte Samen
+Mokka
+Müsli
+Müsli
+Muffin
+Champignons
+Muscheln
+Senf
+Senföl
+Naan-Brot - glatt
+Nektarinen
+Nektarinen - Konserven
+Nektarinen - gefroren
+Nudeln
+Muskatnuss
+Haferflocken
+Oatly Haferdrink
+Haferly Haferdrink - Barista Edition
+Haferflocken-Getränk - Calcium
+Haferflocken-Getränk - Calcium Bio
+Oatly Haferdrink - Schokolade
+Haferflocken-Getränk - Schokolade Deluxe
+Haferflocken-Getränk - Deluxe
+Oatly Oat Drink - Deluxe (Deutschland, Österreich, Niederlande)
+Oatly Haferdrink - Fettreduziert
+Oatly Haferdrink - Fettarm Bio
+Oatly Haferdrink - Orange-Mango
+Oatly Haferdrink - Bio
+Oatly Haferdrink - Halbentrahmt
+Oatly Haferdrink - Halbfett Bio
+Oatly Haferdrink - Vanille
+Oatly Haferdrink - Vanille Bio
+Hafer
+Oktopus
+Olivenöl
+Oliven
+Zwiebel
+Zwiebel - gefroren
+Zwiebel - eingelegt
+Orangensaft
+Orangen
+Oregano
+Andere Hülsenfrüchte
+Andere Spirituosen
+Austernsauce
+Austern
+Palmöl
+Pfannkuchen
+Bauchspeck
+Pangasius
+Papaya
+Paprika
+Petersilie
+Pastinaken
+Passata
+Nudeln
+Nudeln - Vollkorn
+Gebäck
+Pfirsiche
+Pfirsiche - Konserven
+Pfirsiche - gefroren
+Erdnuss
+Erdnussbutter
+Erdnussöl
+Birnen
+Birnen - Konserven
+Birnen - getrocknet
+Erbsen
+Erbsen - getrocknet und in Dosen
+Erbsen - gefroren
+Erbsen - geschält und in Dosen
+Erbsen - gespalten, konserviert
+Pekannuss
+Pfefferminz-Extrakt
+Paprika
+Paprikaschoten - grün
+Paprika - eingelegt
+Paprika - rot
+Pesto
+Ananassaft
+Ananas
+Ananas - konserviert
+Ananas - getrocknet
+Pistazien
+Pitta-Brot
+Pizza
+Scholle
+Pflanzlicher Brotaufstrich
+Pflaumen
+Pflaumen - konserviert
+Pflaumen - getrocknet
+Polenta
+Seelachs
+Schweinefleisch
+Schweinefleisch und Garnelen Fried Rice - Fertiggericht
+Schweinebraten - Fertiggericht
+Haferbrei
+Kartoffeln
+Krabben
+Kürbiskerne
+Quinoa
+Quorn
+Quorn Klassischer Burger
+Quorn Knusprige Nuggets
+Quorn Hackfleisch
+Quorn Mince (Australien, Neuseeland und Asien)
+Quorn-Stücke
+Quorn-Stückchen (Australien, Neuseeland und Asien)
+Quorn Würstchen
+Quorn Vegane Nuggets
+Quorn Vegan-Stücke
+Kaninchen
+Rosinen
+Rapsöl
+Himbeeren
+Himbeeren - gefroren
+Rote Zwiebel
+Relish
+Rhabarber
+Reis - Basmati
+Reis - braun
+Reis - Jasmin
+Reis - Langkorn
+Reis - Sushi
+Reis - weiß
+Rucola
+Rosmarin
+Rum
+Salbei
+Salatcreme
+Salatdressing
+Salatblätter
+Lachs
+Salz
+Sardinen
+Jakobsmuscheln
+Scampi
+Scones
+Seebarsch
+Wolfsbarsch
+Seetang
+Sesamsamen
+Sesamsamen-Öl
+Schalotte
+Shepherds Pie - Fertiggericht
+Sherry
+Krabben
+Rochen
+Geräucherter Lachs
+Snack-Riegel - Schokolade
+Snack-Riegel - Müsli
+Erfrischungsgetränk
+Saure Sahne
+Sojasauce
+Sojabohnenöl
+Sojabohnen
+Spagheti Bolognese - Fertiggericht
+Spaghetti
+Spinat
+Spinat - Konserven
+Spinat - tiefgekühlt
+Frühlingszwiebeln
+Kürbis
+Tintenfisch
+Steak
+Rührbratensoße
+Brühe - Rindfleisch
+Brühe - Huhn
+Brühe - Lamm
+Brühe - Gemüse
+Erdbeeren
+Erdbeeren - gefroren
+Zucker - braun
+Zucker - Puderzucker
+Zucker - weiß
+Sonnenblumenöl
+Sonnenblumenkerne
+Schwedenkerne
+Süßkartoffel
+Zuckermais - Konserven
+Zuckermais - gefroren
+Zuckermais - am Maiskolben
+Zuckermais - verpackt
+Süßigkeiten
+Süßigkeiten - auf Milchbasis
+Tagliatelle
+Tahini
+Tamari
+Tapiokastärke
+Tee - mit Milch
+Tempeh
+Tequila
+Thymian
+Toffee
+Tofu
+Tomatenketchup
+Tomatenmark
+Tomatensauce
+Tomaten
+Tomaten - in Flaschen
+Tomaten - Konserven
+Tortilla-Wickel
+Sirup
+Forelle
+Thunfisch - frisch
+Truthahn
+Kurkuma
+Rüben
+Erbsen ohne Schale
+Valess
+Vanille
+Vanille-Extrakt
+Kalbfleisch
+Pflanzliches Öl
+Gemüse-Patty
+Hirschfleisch
+Essig
+Wodka
+Waffel
+Walnuss
+Wasser
+Brunnenkresse
+Weizen
+Whiskey
+Whitebait
+Wittling
+Wein
+Worcestershire-Sauce
+Xanthangummi
+Hefe
+Hefeextrakt
+Joghurt
