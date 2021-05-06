@@ -1,14 +1,18 @@
-const { getAllFoods } = require("../data/dataProcessing.js");
+const {
+  getAllFoods,
+  mapFoodNameToClosestFood,
+} = require("../data/dataProcessing.js");
 
 async function oneIngredientHandler(req, res) {
-  console.log(req.body);
-  res.json({ message: "ingredient" });
+  let foodName = req.body.foodName;
+  let food = mapFoodNameToClosestFood(foodName);
+  console.log(foodName);
+  console.log(food);
+  res.json(food);
 }
 
 async function recipeHandler(req, res) {
-  let foodName = req.body.foodName;
-  let food = mapFoodNameToClosestFood(foodName);
-  res.json(food);
+  res.json({ message: "recipe" });
 }
 
 async function allIngredients(req, res) {
