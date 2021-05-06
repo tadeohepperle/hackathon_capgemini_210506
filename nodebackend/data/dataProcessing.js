@@ -85,7 +85,6 @@ function convertAmountToGrams(amount, food) {
     { symbol: "ml", grams: 1 },
     { symbol: "l", grams: 1000 },
   ];
-
   let einheit = { symbol: "", grams: serving_weight };
   for (let i = 0; i < einheiten.length; i++) {
     if (amount.search(einheiten[i].symbol) != -1) {

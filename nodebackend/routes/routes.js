@@ -10,9 +10,15 @@ async function oneIngredientHandler(req, res) {
       .status(400)
       .send("Please provide 'foodName' as field of POST-Request Body!");
   } else {
-    let foodName = req.body.foodName;
-    let food = mapFoodNameToClosestFood(foodName);
-    res.json(food);
+    try {
+      let foodName = req.body.foodName;
+      let food = mapFoodNameToClosestFood(foodName);
+      res.json(food);
+    } catch (ex) {
+      res
+        .status(400)
+        .send("Please provide 'foodName' as field of POST-Request Body!");
+    }
   }
 }
 
@@ -25,8 +31,16 @@ async function recipeHandler(req, res) {
     req.body.recipe[0].amount !== undefined &&
     req.body.recipe[0].foodName !== undefined
   ) {
-    let recipeAndEmissionsData = mapRecipeToEmissionsData(req.body.recipe);
-    res.json(recipeAndEmissionsData);
+    try {
+      let recipeAndEmissionsData = mapRecipeToEmissionsData(req.body.recipe);
+      res.json(recipeAndEmissionsData);
+    } catch (ex) {
+      res
+        .status(400)
+        .send(
+          "Please provide 'recipe' as field of POST-Request Body! It should contain objects with 'amount' and 'foodName' fields."
+        );
+    }
   } else {
     res
       .status(400)
