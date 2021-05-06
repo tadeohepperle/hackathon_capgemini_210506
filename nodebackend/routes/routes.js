@@ -4,11 +4,17 @@ const {
 } = require("../data/dataProcessing.js");
 
 async function oneIngredientHandler(req, res) {
-  let foodName = req.body.foodName;
-  let food = mapFoodNameToClosestFood(foodName);
-  console.log(foodName);
-  console.log(food);
-  res.json(food);
+  if (!req.body || !req.body.foodName) {
+    res
+      .status(400)
+      .send("Please provide 'foodName' as field of POST-Request Body!");
+  } else {
+    let foodName = req.body.foodName;
+    let food = mapFoodNameToClosestFood(foodName);
+    console.log(foodName);
+    console.log(food);
+    res.json(food);
+  }
 }
 
 async function recipeHandler(req, res) {
