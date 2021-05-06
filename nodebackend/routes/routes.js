@@ -4,7 +4,7 @@ const {
   mapRecipeToEmissionsData,
 } = require("../data/dataProcessing.js");
 
-const { chefkochURLToData } = require("../chefkochparser/chefkochscraper.js");
+const { chefkochURLToData } = require("../data/chefkochscraper.js");
 
 async function oneIngredientHandler(req, res) {
   if (!req.body || !req.body.foodName) {

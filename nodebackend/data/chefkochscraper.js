@@ -18,6 +18,8 @@ async function getHTMLPageAsTextFromURL(url) {
 function chefkochHTMLToData(text, url) {
   try {
     $ = Cheerio.load(text);
+
+    // get ingredients data
     table_as_array = [];
     line = [];
     $(".ingredients > tbody > tr > td").each((index, element) => {
@@ -32,9 +34,24 @@ function chefkochHTMLToData(text, url) {
     data = table_as_array.map((el) => {
       return { amount: el[0], foodName: el[1] };
     });
-    return { recipe: data, error: false, url: url };
+    // get title
+    let title = $("h1").text().trim();
+
+    let rating = $(".ds-rating-avg > span >strong").text().trim();
+    let portions = $(".ds-input").attr("value");
+    let imageURL = $("img.i-amphtml-fill-content").attr("src");
+
+    return {
+      recipe: data,
+      error: false,
+      url,
+      title,
+      rating,
+      portions,
+      imageURL,
+    };
   } catch (ex) {
-    return { recipe: [], error: true, url: url };
+    return { recipe: [], error: true, url };
   }
 }
 
@@ -47,9 +64,11 @@ async function chefkochURLToData(url) {
 
 async function run() {
   let url =
-    "https://www.chefkoch.de/rezepte/3996311613127280/Kuerbis-Hummus-Dip-mit-PausenCracker.html";
+    "https://www.chefkoch.de/rezepte/22771005725755/Paprika-Sahne-Haehnchen.html";
   let data = await chefkochURLToData(url);
   console.log(data);
 }
+
+run();
 
 module.exports.chefkochURLToData = chefkochURLToData;

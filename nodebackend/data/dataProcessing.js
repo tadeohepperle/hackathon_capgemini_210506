@@ -40,8 +40,10 @@ function mapRecipeToEmissionsData(recipeDataObject) {
   recipeWithAdditionalData.forEach((ingr) => {
     totalEmissions += ingr.grams * ingr.emissions_per_gram;
   });
+  totalEmissions /= recipeDataObject.portions;
 
   return {
+    ...recipeDataObject,
     totalEmissions,
     recipe: recipeWithAdditionalData,
   };
