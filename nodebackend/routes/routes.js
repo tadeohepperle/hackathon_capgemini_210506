@@ -1,6 +1,7 @@
 const {
   getAllFoods,
   mapFoodNameToClosestFood,
+  mapRecipeToEmissionsData,
 } = require("../data/dataProcessing.js");
 
 async function oneIngredientHandler(req, res) {
@@ -11,14 +12,28 @@ async function oneIngredientHandler(req, res) {
   } else {
     let foodName = req.body.foodName;
     let food = mapFoodNameToClosestFood(foodName);
-    console.log(foodName);
-    console.log(food);
     res.json(food);
   }
 }
 
 async function recipeHandler(req, res) {
-  res.json({ message: "recipe" });
+  if (
+    req.body &&
+    req.body.recipe &&
+    Array.isArray(req.body.recipe) &&
+    req.body.recipe.length > 0 &&
+    req.body.recipe[0].amount !== undefined &&
+    req.body.recipe[0].foodName !== undefined
+  ) {
+    let recipeAndEmissionsData = mapRecipeToEmissionsData(req.body.recipe);
+    res.json(recipeAndEmissionsData);
+  } else {
+    res
+      .status(400)
+      .send(
+        "Please provide 'recipe' as field of POST-Request Body! It should contain objects with 'amount' and 'foodName' fields."
+      );
+  }
 }
 
 async function allIngredients(req, res) {

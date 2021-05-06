@@ -359,7 +359,7 @@
     "serving_desc": "1 bottle",
     "food_URL_encoded": "Beer%20bottle",
     "emissions_value": "0.87600",
-    "food_german": "Bierflasche",
+    "food_german": "Bier",
     "synonyms": ""
   },
   {
@@ -4568,7 +4568,7 @@
     "food_id": "524",
     "food_category": "Vegetables",
     "food": "Rocket",
-    "serving_weight": "0",
+    "serving_weight": "45",
     "serving_desc": "",
     "food_URL_encoded": "Rocket",
     "emissions_value": "1.60930",
