@@ -1,25 +1,43 @@
 import 'package:hackathon_capgemini_210506/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
+import 'package:hackathon_capgemini_210506/dataService.dart';
 
 class DataScreen extends StatefulWidget {
-  DataScreen({Key key}) : super(key: key);
+  final Recipe recipe;
+  DataScreen({Key key, this.recipe}) : super(key: key);
 
   @override
-  _DataScreenState createState() => _DataScreenState();
+  _DataScreenState createState() => _DataScreenState(recipe: recipe);
 }
 
 class _DataScreenState extends State<DataScreen> {
+  Recipe recipe;
+  _DataScreenState({this.recipe});
+
   @override
   build(BuildContext context) {
+    recipe = Recipe.example;
+    // List<Ingredient> ingredients = [
+    //   Ingredient("1TL", "nutella"),
+    //   Ingredient("1TL", "nutella"),
+    //   Ingredient("1TL", "nutella"),
+    //   Ingredient("1 L", "Eier")
+    // ];
+    // if (recipe == null)
+    //   return Container(child: Text("Recipe is null"));
+    // else
     return ListView(children: [
       GaugeStack(6000),
-      IngredientsTable(),
+      IngredientsTable(ingredients: recipe.ingredients),
     ]);
   }
 }
 
 class IngredientsTable extends StatelessWidget {
+  List<Ingredient> ingredients;
+  IngredientsTable({this.ingredients});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -37,14 +55,14 @@ class IngredientsTable extends StatelessWidget {
           style: TextStyle(fontStyle: FontStyle.italic),
         ))
       ],
-      rows: const <DataRow>[
-        DataRow(
-          cells: <DataCell>[
-            DataCell(Text('1 EL')),
-            DataCell(Text('Nutella')),
-          ],
-        ),
-      ],
+      rows: ingredients
+          .map((ingr) => DataRow(
+                cells: <DataCell>[
+                  DataCell(Text(ingr.amount)),
+                  DataCell(Text(ingr.foodNameGiven)),
+                ],
+              ))
+          .toList(),
     ));
   }
 }

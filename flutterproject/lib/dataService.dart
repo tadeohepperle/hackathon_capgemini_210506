@@ -6,18 +6,33 @@ class Recipe {
       this.imageURL,
       this.chefkochURL,
       this.ingredients,
-      this.bewertung});
+      this.rating});
+
+  static Recipe example = Recipe(
+      title: "Paprika-Sahne-Hähnchen",
+      imageURL:
+          "https://img.chefkoch-cdn.de/rezepte/22771005725755/bilder/1061693/crop-600x400/paprika-sahne-haehnchen.jpg",
+      chefkochURL:
+          "https://www.chefkoch.de/rezepte/22771005725755/Paprika-Sahne-Haehnchen.html",
+      ingredients: [
+        Ingredient("1TL", "nutella"),
+        Ingredient("1TL", "Milch"),
+        Ingredient("1TL", "nutella"),
+        Ingredient("1 L", "Eier")
+      ],
+      rating: 4.6);
   // Recipe.fromJSON(String json){
   //   return Recipe()
   // }
-  String title = "Title";
+  String title = "";
   String imageURL = "";
   String chefkochURL = "";
   List<Ingredient> ingredients;
-  double bewertung = 0;
+  double rating = 0;
 }
 
 class Ingredient {
+  Ingredient(this.amount, this.foodNameGiven);
   String foodNameGiven;
   String foodNameGuessed;
   String amount;
