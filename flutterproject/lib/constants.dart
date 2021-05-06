@@ -7,4 +7,5 @@ class Constants {
   static const textColor = Colors.grey;
   static const backgroundColor = Colors.white;
   static const double defaultPadding = 20.0;
+  static const String backendURL = "https://www.schwimmbadberlin.de/capgemini/";
 }
