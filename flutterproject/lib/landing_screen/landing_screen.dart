@@ -18,7 +18,6 @@ class _LandingScreenState extends State<LandingScreen> {
   void initialization() {
     //
     inputRightNow = "";
-    uiState = UIState.preButtonClick;
   }
 
   int counter = 0;
@@ -56,13 +55,14 @@ class _LandingScreenState extends State<LandingScreen> {
   @override
   build(BuildContext context) {
     recipe = Recipe.example;
+
     List<Widget> children = [
       Container(
-        height: 50,
-        color: Constants.primaryColor,
+        height: 100,
+        // decoration: Constants.boxDecoration,
         child: Center(
-            child: Text('Sag uns was du essen willst!',
-                style: Constants.textStyleNormal)),
+            child: Text('Check deine Lieblingsrezepte!',
+                style: Constants.textStyleH1)),
       ),
       Container(
           margin: EdgeInsets.symmetric(vertical: Constants.defaultPadding),
@@ -78,6 +78,10 @@ class _LandingScreenState extends State<LandingScreen> {
           )),
       FlatButton(
         height: 50,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10.0),
+          // side: BorderSide(color: Colors.red)
+        ),
         focusColor: Colors.red,
         color: Constants.primaryColor,
         hoverColor: Colors.green,
@@ -87,11 +91,24 @@ class _LandingScreenState extends State<LandingScreen> {
         },
         child: Text('CO² Fußabdruck checken', style: Constants.textStyleNormal),
       ),
+      Container(margin: EdgeInsets.all(Constants.defaultPadding / 2)),
     ];
 
     if (uiState == UIState.error) children.add(ErrorScreen());
-    if (uiState == UIState.loading) children.add(CircularProgressIndicator());
-    if (uiState == UIState.postButtonClick) RecipeCard(recipe: recipe);
+    if (uiState == UIState.loading) {
+      children.add(Center(
+          child: Container(
+              margin: EdgeInsets.only(top: Constants.defaultPadding * 2),
+              width: 100,
+              child: AspectRatio(
+                  aspectRatio: 1,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 20,
+                    color: Constants.primaryColor,
+                  )))));
+    }
+    if (uiState == UIState.postButtonClick)
+      children.add(RecipeCard(recipe: recipe));
 
     return Container(
         color: Constants.backgroundColor,

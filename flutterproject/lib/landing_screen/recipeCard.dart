@@ -30,7 +30,7 @@ class RecipeCard extends StatelessWidget {
             semanticContainer: true,
             clipBehavior: Clip.antiAliasWithSaveLayer,
             child: Image.network(
-              'https://placeimg.com/640/480/any',
+              recipe.imageURL,
               fit: BoxFit.fill,
             ),
             shape: RoundedRectangleBorder(
@@ -50,7 +50,7 @@ class RecipeCard extends StatelessWidget {
                     Text('Rezept mit ${recipe.ingredients.length} Zutaten',
                         style: Constants.textStyleSmall),
                     RatingBarIndicator(
-                      rating: 4.3,
+                      rating: recipe.rating,
                       itemBuilder: (context, index) => Icon(
                         Icons.star,
                         color: Colors.amber,
