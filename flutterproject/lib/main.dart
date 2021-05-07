@@ -44,7 +44,7 @@ class _OverarchingHomeComponentState extends State<OverarchingHomeComponent> {
               Tab(icon: Icon(Icons.explore))
             ],
           ),
-          title: Text('Carbon Crunch - CO² Reducer'),
+          title: Text('Carbon Crunch - CO² Checker'),
         ),
         body: TabBarView(
           children: [LandingScreen(), NewsScreen()],

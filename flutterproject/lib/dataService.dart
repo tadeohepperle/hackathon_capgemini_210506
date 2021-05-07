@@ -76,20 +76,19 @@ Future<Recipe> getChefkochDataFromURL(String url) async {
       retrievedIngredients
           .add(Ingredient(el["amount"], el["foodName_given"], el["grams"]));
     });
-
     Recipe retrievedRecipe = Recipe(
         title: requestBody["title"],
         chefkochURL: requestBody["url"],
         rating: double.parse(requestBody["rating"]),
         imageURL: requestBody["imageURL"],
         portions: int.parse(requestBody["portions"]),
-        totalEmissions: requestBody["totalEmissions"],
-        totalGrams: requestBody["totalGrams"],
-        totalScore: requestBody["totalScore"],
+        totalEmissions: requestBody["totalEmissions"].toDouble(),
+        totalGrams: requestBody["totalGrams"].toDouble(),
+        totalScore: requestBody["totalScore"].toDouble(),
         ingredients: retrievedIngredients);
-
     return retrievedRecipe;
   } catch (exception) {
+    print(exception);
     return null;
   }
 }
@@ -119,10 +118,12 @@ Future<List<Recipe>> getCachedChefkochDataFromURL(int limit) async {
           rating: double.parse(recipeObject["rating"]),
           imageURL: recipeObject["imageURL"],
           portions: int.parse(recipeObject["portions"]),
-          totalEmissions: recipeObject["totalEmissions"],
-          totalGrams: recipeObject["totalGrams"],
-          totalScore: recipeObject["totalScore"],
+          totalEmissions: recipeObject["totalEmissions"].toDouble(),
+          totalGrams: recipeObject["totalGrams"].toDouble(),
+          totalScore: recipeObject["totalScore"].toDouble(),
           ingredients: retrievedIngredients);
+      print(retrievedRecipe.totalScore);
+
       retrievedRecipes.add(retrievedRecipe);
     });
     return retrievedRecipes;

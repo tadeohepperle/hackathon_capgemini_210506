@@ -27,7 +27,7 @@ class _DataScreenState extends State<DataScreen> {
 
   @override
   build(BuildContext context) {
-    print(recipe.totalEmissions);
+    print(recipe.totalScore);
     return ListView(
         padding: EdgeInsets.all(Constants.defaultPadding),
         children: [
@@ -39,7 +39,7 @@ class _DataScreenState extends State<DataScreen> {
             child: Center(
                 child: Text('${recipe.title}', style: Constants.textStyleH1)),
           ),
-          GaugeStack(recipe.totalScore, recipe.imageURL),
+          GaugeStack(recipe.totalScore * 100, recipe.imageURL),
           Container(
             padding: EdgeInsets.only(top: Constants.defaultPadding / 2),
             alignment: Alignment.center,
@@ -143,6 +143,7 @@ class Gauge extends StatelessWidget {
   Gauge(double value) {
     this._value = value;
   }
+  final double rangeTo = 1200;
   build(BuildContext context) {
     return Container(
         height: MediaQuery.of(context).size.height * .50,
@@ -152,7 +153,7 @@ class Gauge extends StatelessWidget {
             axes: <RadialAxis>[
               RadialAxis(
                   minimum: 0,
-                  maximum: 5000,
+                  maximum: rangeTo,
                   startAngle: 180,
                   endAngle: 360,
                   showLabels: false,
@@ -165,7 +166,7 @@ class Gauge extends StatelessWidget {
                     GaugeAnnotation(
                         widget: Container(
                             child: Text(
-                                '${_value.toInt().toString()} g CO2 / g Gericht',
+                                '${(_value).toStringAsFixed(0).replaceAll(".", ",")} g CO2 / 100 g',
                                 style: Constants.textStyleH2)),
                         angle: 90,
                         positionFactor: 0.5)
@@ -179,28 +180,21 @@ class Gauge extends StatelessWidget {
                   ranges: <GaugeRange>[
                     GaugeRange(
                         startValue: 0,
-                        endValue: 1666,
+                        endValue: rangeTo / 3,
                         color: Colors.green,
                         sizeUnit: GaugeSizeUnit.factor,
                         startWidth: 0.3,
                         endWidth: 0.3),
                     GaugeRange(
-                        startValue: 1666,
-                        endValue: 3333,
+                        startValue: rangeTo / 3,
+                        endValue: rangeTo / 3 * 2,
                         color: Colors.orange,
                         sizeUnit: GaugeSizeUnit.factor,
                         startWidth: 0.3,
                         endWidth: 0.3),
                     GaugeRange(
-                        startValue: 3333,
-                        endValue: 5000,
-                        color: Colors.red,
-                        sizeUnit: GaugeSizeUnit.factor,
-                        startWidth: 0.3,
-                        endWidth: 0.3),
-                    GaugeRange(
-                        startValue: 6000,
-                        endValue: 8000,
+                        startValue: rangeTo / 3 * 2,
+                        endValue: rangeTo,
                         color: Colors.red,
                         sizeUnit: GaugeSizeUnit.factor,
                         startWidth: 0.3,
