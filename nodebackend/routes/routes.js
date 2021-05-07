@@ -85,10 +85,12 @@ async function chefkochURLHandler(req, res) {
       } else {
         // get data from chefkoch url:
         let recipeDataFromChefkoch = await chefkochURLToData(chefkochurl);
-        if (recipeDataFromChefkoch.error) {
-          throw new Error(
-            "recipeDataFromChefkoch.error was true, this cant be good."
-          );
+        if (
+          recipeDataFromChefkoch.error ||
+          !recipeDataFromChefkoch.recipe ||
+          recipeDataFromChefkoch.recipe.length == 0
+        ) {
+          throw new Error("this cant be good.");
         } else {
           let recipeAndEmissionsData = mapRecipeToEmissionsData(
             recipeDataFromChefkoch
