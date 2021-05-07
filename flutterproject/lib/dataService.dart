@@ -118,9 +118,9 @@ Future<List<Recipe>> getCachedChefkochDataFromURL(int limit) async {
           rating: double.parse(recipeObject["rating"]),
           imageURL: recipeObject["imageURL"],
           portions: int.parse(recipeObject["portions"]),
-          totalEmissions: double.parse(recipeObject["totalEmissions"]),
-          totalGrams: double.parse(recipeObject["totalGrams"]),
-          totalScore: double.parse(recipeObject["totalScore"]),
+          totalEmissions: recipeObject["totalEmissions"].toDouble(),
+          totalGrams: recipeObject["totalGrams"].toDouble(),
+          totalScore: recipeObject["totalScore"].toDouble(),
           ingredients: retrievedIngredients);
       print(retrievedRecipe.totalScore);
 
