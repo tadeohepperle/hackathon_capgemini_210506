@@ -87,17 +87,13 @@ Future<Recipe> getChefkochDataFromURL(String url) async {
 
 Future<List<Recipe>> getCachedChefkochDataFromURL(int limit) async {
   try {
-    var backendURL = Uri.parse(Constants.backendURL + "/allcashed");
+    var backendURL = Uri.parse(Constants.backendURL + "/allcached");
     http.Response response = await http.post(
       backendURL,
       headers: <String, String>{
         'Content-Type': 'application/json; charset=UTF-8',
       },
-      body: jsonEncode(<String, dynamic>{
-        'limit': limit,
-      }),
     );
-
     List<Recipe> retrievedRecipes = [];
 
     var requestBody = jsonDecode(response.body);
@@ -114,7 +110,7 @@ Future<List<Recipe>> getCachedChefkochDataFromURL(int limit) async {
           rating: double.parse(recipeObject["rating"]),
           imageURL: recipeObject["imageURL"],
           portions: int.parse(recipeObject["portions"]),
-          totalEmissions: recipeObject["totalEmissions"],
+          totalEmissions: 342,
           ingredients: retrievedIngredients);
       retrievedRecipes.add(retrievedRecipe);
     });

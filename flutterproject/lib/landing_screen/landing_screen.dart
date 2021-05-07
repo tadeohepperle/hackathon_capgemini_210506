@@ -25,11 +25,6 @@ class _LandingScreenState extends State<LandingScreen> {
   String inputRightNow;
 
   void submitButtonPressed() async {
-    var recipes = await getCachedChefkochDataFromURL(10);
-    print(recipes);
-    return;
-
-    print(inputRightNow);
     setState(() {
       //uiState update
       uiState = UIState.loading;
