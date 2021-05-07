@@ -53,6 +53,9 @@ class IngredientsTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ingredients.forEach((element) {
+      print({element.amount, element.foodNameGiven});
+    });
     return Container(
         child: DataTable(
       columns: <DataColumn>[
@@ -74,10 +77,10 @@ class IngredientsTable extends StatelessWidget {
                   DataCell(Text(ingr.amount,
                       style: TextStyle(
                           fontSize: 20, fontStyle: FontStyle.italic))),
-                  DataCell(Text(ingr.foodNameGiven,
-                      style:
-                          TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
-                      textAlign: TextAlign.center)),
+                  DataCell(Text(
+                    ingr.foodNameGiven,
+                    style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
+                  )),
                 ],
               ))
           .toList(),
@@ -125,7 +128,7 @@ class Gauge extends StatelessWidget {
                     GaugeAnnotation(
                         widget: Container(
                             child: Text(
-                                '${_value.toString()} Gramm CO2 / Portion',
+                                '${_value.toInt().toString()} g CO2 / Portion',
                                 style: Constants.textStyleH2)),
                         angle: 90,
                         positionFactor: 0.5)

@@ -67,7 +67,7 @@ Future<Recipe> getChefkochDataFromURL(String url) async {
     List<Ingredient> retrievedIngredients = [];
     requestBody["recipe"].forEach((el) {
       retrievedIngredients
-          .add(Ingredient(el["amount"], el["foodNameGiven"], el["grams"]));
+          .add(Ingredient(el["amount"], el["foodName_given"], el["grams"]));
     });
 
     Recipe retrievedRecipe = Recipe(
@@ -101,7 +101,7 @@ Future<List<Recipe>> getCachedChefkochDataFromURL(int limit) async {
       List<Ingredient> retrievedIngredients = [];
       recipeObject["recipe"].forEach((el) {
         retrievedIngredients
-            .add(Ingredient(el["amount"], el["foodNameGiven"], el["grams"]));
+            .add(Ingredient(el["amount"], el["foodName_given"], el["grams"]));
       });
 
       Recipe retrievedRecipe = Recipe(
