@@ -2,7 +2,7 @@
     package="com.example.hackathon_capgemini_210506">
    <application
         android:label="hackathon_capgemini_210506"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
