@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // here we put constants that we can use throughout the entire project
 class Constants {
   static final String appTitle = 'Capgemini App';
-  static final Color primaryColor = Colors.green[100];
+  static final Color primaryColor = Colors.green;
   static final Color extColor = Colors.grey;
   static final Color backgroundColor = Colors.white;
   static final Color textColor = Colors.grey[900];

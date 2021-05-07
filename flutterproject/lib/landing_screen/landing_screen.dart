@@ -55,11 +55,10 @@ class _LandingScreenState extends State<LandingScreen> {
   build(BuildContext context) {
     List<Widget> children = [
       Container(
-        height: 100,
         // decoration: Constants.boxDecoration,
         child: Center(
-            child: Text('Check deine Lieblingsrezepte!',
-                style: Constants.textStyleH1)),
+            child: Text('Was möchtest du gerne kochen?',
+                style: Constants.textStyleH1, textAlign: TextAlign.center)),
       ),
       Container(
           margin: EdgeInsets.symmetric(vertical: Constants.defaultPadding),
@@ -87,7 +86,11 @@ class _LandingScreenState extends State<LandingScreen> {
           FocusScope.of(context).requestFocus(new FocusNode());
           submitButtonPressed();
         },
-        child: Text('CO² Fußabdruck checken', style: Constants.textStyleNormal),
+        child: Text('CO² Fußabdruck checken',
+            style: TextStyle(
+                fontSize: Constants.fontSizeNormal,
+                fontWeight: FontWeight.bold,
+                color: Colors.white)),
       ),
       Container(margin: EdgeInsets.all(Constants.defaultPadding / 2)),
     ];

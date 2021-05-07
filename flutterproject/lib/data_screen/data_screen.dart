@@ -82,7 +82,10 @@ class _DataScreenState extends State<DataScreen> {
               _launchURL(recipe.chefkochURL);
             },
             child: Text('auf Chefkoch.de öffnen',
-                style: Constants.textStyleNormal),
+                style: TextStyle(
+                    fontSize: Constants.fontSizeNormal,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white)),
           ),
         ]);
   }
