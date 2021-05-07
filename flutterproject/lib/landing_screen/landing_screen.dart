@@ -11,11 +11,7 @@ class LandingScreen extends StatefulWidget {
   _LandingScreenState createState() => _LandingScreenState();
 }
 
-//Das erste ist immer der Parametername
-
-//Column gibt Widget zurück
-
-enum UIState { preButtonClick, loading, postButtonClick }
+enum UIState { preButtonClick, loading, postButtonClick, error }
 
 class _LandingScreenState extends State<LandingScreen> {
   UIState uiState;
@@ -26,7 +22,7 @@ class _LandingScreenState extends State<LandingScreen> {
   }
 
   int counter = 0;
-  Recipe recipe;
+  Recipe recipe = Recipe.example;
   String inputRightNow;
 
   void submitButtonPressed() async {
@@ -37,15 +33,18 @@ class _LandingScreenState extends State<LandingScreen> {
     });
 
     // api call
-
     Recipe recipeFromAPI = await getChefkochDataFromURL(inputRightNow);
-
-    setState(() {
-      recipe = recipeFromAPI;
-    });
-    // await getChefkochDataFromURL
-
-    //if()
+    if (recipeFromAPI == null) {
+      setState(() {
+        uiState = UIState.error;
+        recipe = null;
+      });
+    } else {
+      setState(() {
+        uiState = UIState.postButtonClick;
+        recipe = recipeFromAPI;
+      });
+    }
   }
 
   @override
@@ -56,31 +55,29 @@ class _LandingScreenState extends State<LandingScreen> {
 
   @override
   build(BuildContext context) {
-    List<Widget> children;
-
-    children = [
+    recipe = Recipe.example;
+    List<Widget> children = [
       Container(
         height: 50,
         color: Constants.primaryColor,
-        child: Center(child: Text('Sag uns was du essen willst!')),
+        child: Center(
+            child: Text('Sag uns was du essen willst!',
+                style: Constants.textStyleNormal)),
       ),
-      Padding(
-        padding: EdgeInsets.all(16.0),
-      ),
-      TextField(
-        onChanged: (String value) {
-          inputRightNow = value;
-        },
-        obscureText: false,
-        decoration: InputDecoration(
-          border: OutlineInputBorder(),
-          labelText: 'Link',
-        ),
-      ),
-      Padding(
-        padding: EdgeInsets.all(16.0),
-      ),
+      Container(
+          margin: EdgeInsets.symmetric(vertical: Constants.defaultPadding),
+          child: TextField(
+            onChanged: (String value) {
+              inputRightNow = value;
+            },
+            obscureText: false,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Chefkoch.de URL',
+            ),
+          )),
       FlatButton(
+        height: 50,
         focusColor: Colors.red,
         color: Constants.primaryColor,
         hoverColor: Colors.green,
@@ -88,37 +85,34 @@ class _LandingScreenState extends State<LandingScreen> {
         onPressed: () {
           submitButtonPressed();
         },
-        child: Text('Los!'),
+        child: Text('CO² Fußabdruck checken', style: Constants.textStyleNormal),
       ),
-      /*Container(
-                child: Image(
-                    image: NetworkImage(
-                        'https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif'))), */
     ];
 
-    if (uiState == UIState.preButtonClick) {
-      children;
-    } else {
-      /*children.add(FlatButton(
-        focusColor: Colors.red,
-        color: Constants.primaryColor,
-        hoverColor: Colors.green,
-        splashColor: Colors.white,
-        onPressed: () {
-          submitButtonPressed();
-        },
-        child: Text('Los!'),
-      )); */
-      children.add(RecipeCard(
-        recipe: recipe,
-      ));
-    }
+    if (uiState == UIState.error) children.add(ErrorScreen());
+    if (uiState == UIState.loading) children.add(CircularProgressIndicator());
+    if (uiState == UIState.postButtonClick) RecipeCard(recipe: recipe);
 
     return Container(
         color: Constants.backgroundColor,
         child: ListView(
-          padding: const EdgeInsets.all(8),
+          padding: EdgeInsets.all(Constants.defaultPadding),
           children: children,
         ));
+  }
+}
+
+class ErrorScreen extends StatelessWidget {
+  const ErrorScreen({Key key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(Constants.defaultPadding),
+      child: Text(
+          "Es tut uns Leid, es ist ein Fehler aufgetreten, bitte versuchen Sie es erneut.",
+          style: TextStyle(color: Colors.red, fontSize: 16),
+          textAlign: TextAlign.center),
+    );
   }
 }

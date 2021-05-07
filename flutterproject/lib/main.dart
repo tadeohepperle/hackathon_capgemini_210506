@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: Constants.appTitle,
       theme: ThemeData(
-        primarySwatch: Constants.primaryColor,
+        primarySwatch: Colors.green,
       ),
       home: OverarchingHomeComponent(),
     );

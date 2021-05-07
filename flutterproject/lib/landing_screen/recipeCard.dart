@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hackathon_capgemini_210506/dataService.dart';
 import 'package:hackathon_capgemini_210506/constants.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class RecipeCard extends StatelessWidget {
   Recipe recipe;
@@ -8,40 +9,58 @@ class RecipeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(recipe.imageURL);
+
     return Container(
-      color: Constants.backgroundColor,
-      child: Card(
-        child: InkWell(
-          splashColor: Colors.blue.withAlpha(30),
-          onTap: () {
-            print('Card tapped.');
-          },
-          child: SizedBox(
-            width: 500,
-            height: 500,
-            child: ListView(padding: EdgeInsets.all(8), children: [
-              Image.network(
-                recipe.imageURL,
-                fit: BoxFit.fill,
-                height: 200,
-              ),
-              Padding(
-                padding: EdgeInsets.all(2.0),
-              ),
-              Text(
-                recipe.title,
-                textAlign: TextAlign.center,
-                style: TextStyle(height: 2, fontSize: 20),
-              ),
-              Text(
-                recipe.chefkochURL,
-                textAlign: TextAlign.center,
-                style: TextStyle(height: 2, fontSize: 20),
-              )
-            ]),
-          ),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: Offset(0, 3), // changes position of shadow
+            ),
+          ],
         ),
-      ),
-    );
+        // padding: EdgeInsets.all(Constants.defaultPadding),
+        child: Column(children: [
+          Card(
+            semanticContainer: true,
+            clipBehavior: Clip.antiAliasWithSaveLayer,
+            child: Image.network(
+              'https://placeimg.com/640/480/any',
+              fit: BoxFit.fill,
+            ),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            ),
+            elevation: 5,
+            // margin: EdgeInsets.all(10),
+          ),
+          Container(
+              height: 150,
+              padding:
+                  EdgeInsets.symmetric(vertical: Constants.defaultPadding / 2),
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text(recipe.title, style: Constants.textStyleH2),
+                    Text('Rezept mit ${recipe.ingredients.length} Zutaten',
+                        style: Constants.textStyleSmall),
+                    RatingBarIndicator(
+                      rating: 4.3,
+                      itemBuilder: (context, index) => Icon(
+                        Icons.star,
+                        color: Colors.amber,
+                      ),
+                      itemCount: 5,
+                      itemSize: 25.0,
+                      unratedColor: Colors.amber.withAlpha(50),
+                      direction: Axis.horizontal,
+                    )
+                  ]))
+        ]));
   }
 }
