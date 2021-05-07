@@ -35,24 +35,19 @@ class _OverarchingHomeComponentState extends State<OverarchingHomeComponent> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 2,
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
             tabs: [
               Tab(icon: Icon(Icons.backup_table)),
-              Tab(icon: Icon(Icons.explore)),
-              Tab(icon: Icon(Icons.bar_chart)),
+              Tab(icon: Icon(Icons.explore))
             ],
           ),
-          title: Text('Carbon Crunch - CO² Helfer'),
+          title: Text('Carbon Crunch - CO² Reducer'),
         ),
         body: TabBarView(
-          children: [
-            LandingScreen(),
-            NewsScreen(),
-            AnalyticsScreen(),
-          ],
+          children: [LandingScreen(), NewsScreen()],
         ),
       ),
     );

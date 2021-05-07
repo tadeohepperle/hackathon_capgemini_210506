@@ -37,14 +37,17 @@ function mapRecipeToEmissionsData(recipeDataObject) {
     }
   });
   let totalEmissions = 0;
+  let totalGrams = 0;
   recipeWithAdditionalData.forEach((ingr) => {
     totalEmissions += ingr.grams * ingr.emissions_per_gram;
+    totalGrams += ingr.grams;
   });
-  totalEmissions /= recipeDataObject.portions;
 
   return {
     ...recipeDataObject,
     totalEmissions,
+    totalGrams,
+    totalScore: totalEmissions / totalGrams,
     recipe: recipeWithAdditionalData,
   };
 }

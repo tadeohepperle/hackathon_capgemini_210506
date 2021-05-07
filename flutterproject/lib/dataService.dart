@@ -11,23 +11,28 @@ class Recipe {
       this.ingredients,
       this.totalEmissions,
       this.rating,
-      this.portions});
+      this.portions,
+      this.totalGrams,
+      this.totalScore});
 
   static Recipe example = Recipe(
-      title: "Paprika-Sahne-Hähnchen",
-      imageURL:
-          "https://img.chefkoch-cdn.de/rezepte/22771005725755/bilder/1061693/crop-600x400/paprika-sahne-haehnchen.jpg",
-      chefkochURL:
-          "https://www.chefkoch.de/rezepte/22771005725755/Paprika-Sahne-Haehnchen.html",
-      ingredients: [
-        Ingredient("1TL", "nutella", 12),
-        Ingredient("1TL", "Milch", 12),
-        Ingredient("1TL", "nutella", 12),
-        Ingredient("1 L", "Eier", 12)
-      ],
-      totalEmissions: 4567.0,
-      rating: 4.6,
-      portions: 1);
+    title: "Paprika-Sahne-Hähnchen",
+    imageURL:
+        "https://img.chefkoch-cdn.de/rezepte/22771005725755/bilder/1061693/crop-600x400/paprika-sahne-haehnchen.jpg",
+    chefkochURL:
+        "https://www.chefkoch.de/rezepte/22771005725755/Paprika-Sahne-Haehnchen.html",
+    ingredients: [
+      Ingredient("1TL", "nutella", 12),
+      Ingredient("1TL", "Milch", 12),
+      Ingredient("1TL", "nutella", 12),
+      Ingredient("1 L", "Eier", 12)
+    ],
+    totalEmissions: 4567.0,
+    rating: 4.6,
+    portions: 1,
+    totalGrams: 1200,
+    totalScore: 4567.0 / 1200,
+  );
 
   // Recipe.fromJSON(String json){
   //   return Recipe()
@@ -37,6 +42,8 @@ class Recipe {
   String chefkochURL = "";
   List<Ingredient> ingredients;
   double totalEmissions;
+  double totalGrams;
+  double totalScore;
   double rating;
   int portions;
 }
@@ -77,6 +84,8 @@ Future<Recipe> getChefkochDataFromURL(String url) async {
         imageURL: requestBody["imageURL"],
         portions: int.parse(requestBody["portions"]),
         totalEmissions: requestBody["totalEmissions"],
+        totalGrams: requestBody["totalGrams"],
+        totalScore: requestBody["totalScore"],
         ingredients: retrievedIngredients);
 
     return retrievedRecipe;
@@ -110,7 +119,9 @@ Future<List<Recipe>> getCachedChefkochDataFromURL(int limit) async {
           rating: double.parse(recipeObject["rating"]),
           imageURL: recipeObject["imageURL"],
           portions: int.parse(recipeObject["portions"]),
-          totalEmissions: 342,
+          totalEmissions: recipeObject["totalEmissions"],
+          totalGrams: recipeObject["totalGrams"],
+          totalScore: recipeObject["totalScore"],
           ingredients: retrievedIngredients);
       retrievedRecipes.add(retrievedRecipe);
     });

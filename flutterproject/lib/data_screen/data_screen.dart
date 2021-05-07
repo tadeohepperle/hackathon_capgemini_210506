@@ -2,6 +2,8 @@ import 'package:hackathon_capgemini_210506/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 import 'package:hackathon_capgemini_210506/dataService.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class DataScreen extends StatefulWidget {
   final Recipe recipe;
@@ -14,6 +16,14 @@ class DataScreen extends StatefulWidget {
 class _DataScreenState extends State<DataScreen> {
   Recipe recipe;
   _DataScreenState({this.recipe});
+
+  void _launchURL(String url) async {
+    if (await canLaunch(url) || true) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   build(BuildContext context) {
@@ -29,10 +39,25 @@ class _DataScreenState extends State<DataScreen> {
             child: Center(
                 child: Text('${recipe.title}', style: Constants.textStyleH1)),
           ),
-          GaugeStack(recipe.totalEmissions, recipe.imageURL),
+          GaugeStack(recipe.totalScore, recipe.imageURL),
+          Container(
+            padding: EdgeInsets.only(top: Constants.defaultPadding / 2),
+            alignment: Alignment.center,
+            child: RatingBarIndicator(
+              rating: recipe.rating,
+              itemBuilder: (context, index) => Icon(
+                Icons.star,
+                color: Colors.amber,
+              ),
+              itemCount: 5,
+              itemSize: 25.0,
+              unratedColor: Colors.amber.withAlpha(50),
+              direction: Axis.horizontal,
+            ),
+          ),
           Container(
               height: 100,
-              padding: EdgeInsets.all(Constants.defaultPadding),
+              padding: EdgeInsets.only(bottom: Constants.defaultPadding / 2),
               // decoration: Constants.boxDecoration,
               child: Center(
                 child: Text(
@@ -43,6 +68,22 @@ class _DataScreenState extends State<DataScreen> {
                     textAlign: TextAlign.center),
               )),
           IngredientsTable(ingredients: recipe.ingredients),
+          FlatButton(
+            height: 50,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+              // side: BorderSide(color: Colors.red)
+            ),
+            focusColor: Colors.red,
+            color: Constants.primaryColor,
+            hoverColor: Colors.green,
+            splashColor: Colors.white,
+            onPressed: () {
+              _launchURL(recipe.chefkochURL);
+            },
+            child: Text('auf Chefkoch.de öffnen',
+                style: Constants.textStyleNormal),
+          ),
         ]);
   }
 }
@@ -53,48 +94,44 @@ class IngredientsTable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ingredients.forEach((element) {
-      print({element.amount, element.foodNameGiven});
-    });
     return Container(
+        padding: EdgeInsets.only(bottom: Constants.defaultPadding),
         child: DataTable(
-      columns: <DataColumn>[
-        DataColumn(
-          label: Text(
-            'Menge',
-            style: Constants.textStyleNormal,
-          ),
-        ),
-        DataColumn(
-            label: Text(
-          'Zutat',
-          style: Constants.textStyleNormal,
-        ))
-      ],
-      rows: ingredients
-          .map((ingr) => DataRow(
-                cells: <DataCell>[
-                  DataCell(Text(ingr.amount,
-                      style: TextStyle(
-                          fontSize: 20, fontStyle: FontStyle.italic))),
-                  DataCell(Text(
-                    ingr.foodNameGiven,
-                    style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
-                  )),
-                ],
-              ))
-          .toList(),
-    ));
+          columns: <DataColumn>[
+            DataColumn(
+              label: Text(
+                'Menge',
+                style: Constants.textStyleNormal,
+              ),
+            ),
+            DataColumn(
+                label: Text(
+              'Zutat',
+              style: Constants.textStyleNormal,
+            ))
+          ],
+          rows: ingredients
+              .map((ingr) => DataRow(
+                    cells: <DataCell>[
+                      DataCell(Text(ingr.amount,
+                          style: TextStyle(
+                              fontSize: 20, fontStyle: FontStyle.italic))),
+                      DataCell(Text(
+                        ingr.foodNameGiven,
+                        style: TextStyle(
+                            fontSize: 20, fontStyle: FontStyle.italic),
+                      )),
+                    ],
+                  ))
+              .toList(),
+        ));
   }
 }
 
 class GaugeStack extends StatelessWidget {
   double _value;
   String _url;
-  GaugeStack(double value, String url) {
-    this._value = value;
-    this._url = url;
-  }
+  GaugeStack(this._value, this._url);
 
   build(BuildContext context) {
     return Stack(children: [Gauge(_value), MealImage(_url)]);
@@ -115,7 +152,7 @@ class Gauge extends StatelessWidget {
             axes: <RadialAxis>[
               RadialAxis(
                   minimum: 0,
-                  maximum: 12000,
+                  maximum: 5000,
                   startAngle: 180,
                   endAngle: 360,
                   showLabels: false,
@@ -128,7 +165,7 @@ class Gauge extends StatelessWidget {
                     GaugeAnnotation(
                         widget: Container(
                             child: Text(
-                                '${_value.toInt().toString()} g CO2 / Portion',
+                                '${_value.toInt().toString()} g CO2 / g Gericht',
                                 style: Constants.textStyleH2)),
                         angle: 90,
                         positionFactor: 0.5)
@@ -142,21 +179,21 @@ class Gauge extends StatelessWidget {
                   ranges: <GaugeRange>[
                     GaugeRange(
                         startValue: 0,
-                        endValue: 2000,
+                        endValue: 1666,
                         color: Colors.green,
                         sizeUnit: GaugeSizeUnit.factor,
                         startWidth: 0.3,
                         endWidth: 0.3),
                     GaugeRange(
-                        startValue: 2000,
-                        endValue: 4000,
+                        startValue: 1666,
+                        endValue: 3333,
                         color: Colors.orange,
                         sizeUnit: GaugeSizeUnit.factor,
                         startWidth: 0.3,
                         endWidth: 0.3),
                     GaugeRange(
-                        startValue: 4000,
-                        endValue: 6000,
+                        startValue: 3333,
+                        endValue: 5000,
                         color: Colors.red,
                         sizeUnit: GaugeSizeUnit.factor,
                         startWidth: 0.3,
@@ -164,20 +201,6 @@ class Gauge extends StatelessWidget {
                     GaugeRange(
                         startValue: 6000,
                         endValue: 8000,
-                        color: Colors.red,
-                        sizeUnit: GaugeSizeUnit.factor,
-                        startWidth: 0.3,
-                        endWidth: 0.3),
-                    GaugeRange(
-                        startValue: 8000,
-                        endValue: 10000,
-                        color: Colors.red,
-                        sizeUnit: GaugeSizeUnit.factor,
-                        startWidth: 0.3,
-                        endWidth: 0.3),
-                    GaugeRange(
-                        startValue: 10000,
-                        endValue: 12000,
                         color: Colors.red,
                         sizeUnit: GaugeSizeUnit.factor,
                         startWidth: 0.3,

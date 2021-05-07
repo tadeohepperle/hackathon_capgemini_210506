@@ -84,6 +84,7 @@ class _LandingScreenState extends State<LandingScreen> {
         hoverColor: Colors.green,
         splashColor: Colors.white,
         onPressed: () {
+          FocusScope.of(context).requestFocus(new FocusNode());
           submitButtonPressed();
         },
         child: Text('CO² Fußabdruck checken', style: Constants.textStyleNormal),
