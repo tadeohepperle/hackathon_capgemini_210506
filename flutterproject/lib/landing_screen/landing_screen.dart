@@ -21,10 +21,14 @@ class _LandingScreenState extends State<LandingScreen> {
   }
 
   int counter = 0;
-  Recipe recipe = Recipe.example;
+  Recipe recipe;
   String inputRightNow;
 
   void submitButtonPressed() async {
+    var recipes = await getCachedChefkochDataFromURL(10);
+    print(recipes);
+    return;
+
     print(inputRightNow);
     setState(() {
       //uiState update
@@ -54,8 +58,6 @@ class _LandingScreenState extends State<LandingScreen> {
 
   @override
   build(BuildContext context) {
-    recipe = Recipe.example;
-
     List<Widget> children = [
       Container(
         height: 100,

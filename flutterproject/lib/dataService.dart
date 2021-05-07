@@ -62,7 +62,6 @@ Future<Recipe> getChefkochDataFromURL(String url) async {
         'url': url,
       }),
     );
-    print(response.statusCode);
     var requestBody = jsonDecode(response.body);
 
     List<Ingredient> retrievedIngredients = [];
@@ -71,7 +70,7 @@ Future<Recipe> getChefkochDataFromURL(String url) async {
           .add(Ingredient(el["amount"], el["foodNameGiven"], el["grams"]));
     });
 
-    Recipe rettrievedRecipe = Recipe(
+    Recipe retrievedRecipe = Recipe(
         title: requestBody["title"],
         chefkochURL: requestBody["url"],
         rating: double.parse(requestBody["rating"]),
@@ -80,15 +79,47 @@ Future<Recipe> getChefkochDataFromURL(String url) async {
         totalEmissions: requestBody["totalEmissions"],
         ingredients: retrievedIngredients);
 
-    return rettrievedRecipe;
+    return retrievedRecipe;
   } catch (exception) {
     return null;
   }
+}
 
-  // await Future.delayed(const Duration(seconds: 1), () => "1");
-  // return new Recipe(
-  //     title: "Rec Title",
-  //     chefkochURL: url,
-  //     imageURL:
-  //         "https://img.chefkoch-cdn.de/rezepte/3033411456059781/bilder/1334968/crop-600x400/low-carb-bauerntopf.jpg");
+Future<List<Recipe>> getCachedChefkochDataFromURL(int limit) async {
+  try {
+    var backendURL = Uri.parse(Constants.backendURL + "/allcashed");
+    http.Response response = await http.post(
+      backendURL,
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: jsonEncode(<String, dynamic>{
+        'limit': limit,
+      }),
+    );
+
+    List<Recipe> retrievedRecipes = [];
+
+    var requestBody = jsonDecode(response.body);
+    requestBody?.forEach((dynamic recipeObject) {
+      List<Ingredient> retrievedIngredients = [];
+      recipeObject["recipe"].forEach((el) {
+        retrievedIngredients
+            .add(Ingredient(el["amount"], el["foodNameGiven"], el["grams"]));
+      });
+
+      Recipe retrievedRecipe = Recipe(
+          title: recipeObject["title"],
+          chefkochURL: recipeObject["url"],
+          rating: double.parse(recipeObject["rating"]),
+          imageURL: recipeObject["imageURL"],
+          portions: int.parse(recipeObject["portions"]),
+          totalEmissions: recipeObject["totalEmissions"],
+          ingredients: retrievedIngredients);
+      retrievedRecipes.add(retrievedRecipe);
+    });
+    return retrievedRecipes;
+  } catch (exception) {
+    return null;
+  }
 }

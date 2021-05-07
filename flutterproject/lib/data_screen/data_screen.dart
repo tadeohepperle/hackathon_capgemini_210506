@@ -17,12 +17,33 @@ class _DataScreenState extends State<DataScreen> {
 
   @override
   build(BuildContext context) {
-    recipe = Recipe.example;
     print(recipe.totalEmissions);
-    return ListView(children: [
-      GaugeStack(recipe.totalEmissions, recipe.imageURL),
-      IngredientsTable(ingredients: recipe.ingredients),
-    ]);
+    return ListView(
+        padding: EdgeInsets.all(Constants.defaultPadding),
+        children: [
+          Text('CO2 Äuquivalent für: ',
+              style: TextStyle(fontSize: 20, color: Colors.green[400])),
+          Container(
+            padding: EdgeInsets.only(top: Constants.defaultPadding / 2),
+            // decoration: Constants.boxDecoration,
+            child: Center(
+                child: Text('${recipe.title}', style: Constants.textStyleH1)),
+          ),
+          GaugeStack(recipe.totalEmissions, recipe.imageURL),
+          Container(
+              height: 100,
+              padding: EdgeInsets.all(Constants.defaultPadding),
+              // decoration: Constants.boxDecoration,
+              child: Center(
+                child: Text(
+                    recipe.portions > 1
+                        ? 'Rezept für ${recipe.portions} Portionen'
+                        : 'Rezept für ${recipe.portions} Portion',
+                    style: Constants.textStyleH2,
+                    textAlign: TextAlign.center),
+              )),
+          IngredientsTable(ingredients: recipe.ingredients),
+        ]);
   }
 }
 
@@ -34,24 +55,29 @@ class IngredientsTable extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         child: DataTable(
-      columns: const <DataColumn>[
+      columns: <DataColumn>[
         DataColumn(
           label: Text(
             'Menge',
-            style: TextStyle(fontStyle: FontStyle.italic),
+            style: Constants.textStyleNormal,
           ),
         ),
         DataColumn(
             label: Text(
           'Zutat',
-          style: TextStyle(fontStyle: FontStyle.italic),
+          style: Constants.textStyleNormal,
         ))
       ],
       rows: ingredients
           .map((ingr) => DataRow(
                 cells: <DataCell>[
-                  DataCell(Text(ingr.amount)),
-                  DataCell(Text(ingr.foodNameGiven)),
+                  DataCell(Text(ingr.amount,
+                      style: TextStyle(
+                          fontSize: 20, fontStyle: FontStyle.italic))),
+                  DataCell(Text(ingr.foodNameGiven,
+                      style:
+                          TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
+                      textAlign: TextAlign.center)),
                 ],
               ))
           .toList(),
@@ -80,7 +106,6 @@ class Gauge extends StatelessWidget {
   build(BuildContext context) {
     return Container(
         height: MediaQuery.of(context).size.height * .50,
-        padding: const EdgeInsets.only(top: 20.0),
         child: SfRadialGauge(
             enableLoadingAnimation: true,
             animationDuration: 1000,
@@ -99,10 +124,9 @@ class Gauge extends StatelessWidget {
                   annotations: <GaugeAnnotation>[
                     GaugeAnnotation(
                         widget: Container(
-                            child: Text(_value.toString(),
-                                style: TextStyle(
-                                    fontSize: 25,
-                                    fontWeight: FontWeight.bold))),
+                            child: Text(
+                                '${_value.toString()} Gramm CO2 / Portion',
+                                style: Constants.textStyleH2)),
                         angle: 90,
                         positionFactor: 0.5)
                   ],
@@ -169,11 +193,12 @@ class MealImage extends StatelessWidget {
     return Container(
         decoration: BoxDecoration(),
         padding: new EdgeInsets.only(
-            top: MediaQuery.of(context).size.height * .40, right: 30, left: 30),
+            top: MediaQuery.of(context).size.height * .40, right: 0, left: 0),
         child: ClipRRect(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(10),
             child: Image(
               image: NetworkImage(_url),
+              fit: BoxFit.fill,
             )));
   }
 }

@@ -27,7 +27,7 @@ async function readAllCachedFilesAndReturnContent(limit) {
     let file = await fs.promises.readFile(`./cache/${dirContent[i]}`, "utf8");
     let recipeData = JSON.parse(file);
     allRecipes.push(recipeData);
-    if (limit && limit > i) break;
+    if (limit && limit < i) break;
   }
   return allRecipes;
 }

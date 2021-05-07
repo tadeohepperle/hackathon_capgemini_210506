@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hackathon_capgemini_210506/dataService.dart';
 import 'package:hackathon_capgemini_210506/constants.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:hackathon_capgemini_210506/data_screen/data_screen.dart';
 
 class RecipeCard extends StatelessWidget {
   Recipe recipe;
@@ -11,10 +12,19 @@ class RecipeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     print(recipe.imageURL);
 
+    void cardTapped() {
+      Navigator.of(context, rootNavigator: true)
+          .push(MaterialPageRoute(builder: (BuildContext c) {
+        return Scaffold(
+            appBar: AppBar(
+              title: Text('Settings'),
+            ),
+            body: DataScreen(recipe: recipe));
+      }));
+    }
+
     return GestureDetector(
-        onTap: () {
-          print("Hallo");
-        },
+        onTap: cardTapped,
         child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
