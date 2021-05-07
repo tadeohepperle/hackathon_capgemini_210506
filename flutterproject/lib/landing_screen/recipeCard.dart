@@ -11,56 +11,60 @@ class RecipeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     print(recipe.imageURL);
 
-    return Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10),
-          color: Colors.white,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.5),
-              spreadRadius: 5,
-              blurRadius: 7,
-              offset: Offset(0, 3), // changes position of shadow
+    return GestureDetector(
+        onTap: () {
+          print("Hallo");
+        },
+        child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
             ),
-          ],
-        ),
-        // padding: EdgeInsets.all(Constants.defaultPadding),
-        child: Column(children: [
-          Card(
-            semanticContainer: true,
-            clipBehavior: Clip.antiAliasWithSaveLayer,
-            child: Image.network(
-              recipe.imageURL,
-              fit: BoxFit.fill,
-            ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(10.0),
-            ),
-            elevation: 5,
-            // margin: EdgeInsets.all(10),
-          ),
-          Container(
-              height: 150,
-              padding:
-                  EdgeInsets.symmetric(vertical: Constants.defaultPadding / 2),
-              child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text(recipe.title, style: Constants.textStyleH2),
-                    Text('Rezept mit ${recipe.ingredients.length} Zutaten',
-                        style: Constants.textStyleSmall),
-                    RatingBarIndicator(
-                      rating: recipe.rating,
-                      itemBuilder: (context, index) => Icon(
-                        Icons.star,
-                        color: Colors.amber,
-                      ),
-                      itemCount: 5,
-                      itemSize: 25.0,
-                      unratedColor: Colors.amber.withAlpha(50),
-                      direction: Axis.horizontal,
-                    )
-                  ]))
-        ]));
+            // padding: EdgeInsets.all(Constants.defaultPadding),
+            child: Column(children: [
+              Card(
+                semanticContainer: true,
+                clipBehavior: Clip.antiAliasWithSaveLayer,
+                child: Image.network(
+                  recipe.imageURL,
+                  fit: BoxFit.fill,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
+                elevation: 5,
+                // margin: EdgeInsets.all(10),
+              ),
+              Container(
+                  height: 150,
+                  padding: EdgeInsets.symmetric(
+                      vertical: Constants.defaultPadding / 2),
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text(recipe.title, style: Constants.textStyleH2),
+                        Text('Rezept mit ${recipe.ingredients.length} Zutaten',
+                            style: Constants.textStyleSmall),
+                        RatingBarIndicator(
+                          rating: recipe.rating,
+                          itemBuilder: (context, index) => Icon(
+                            Icons.star,
+                            color: Colors.amber,
+                          ),
+                          itemCount: 5,
+                          itemSize: 25.0,
+                          unratedColor: Colors.amber.withAlpha(50),
+                          direction: Axis.horizontal,
+                        )
+                      ]))
+            ])));
   }
 }

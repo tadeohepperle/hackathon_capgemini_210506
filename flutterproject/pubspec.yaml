@@ -29,7 +29,6 @@ dependencies:
   cupertino_icons: ^1.0.1
   syncfusion_flutter_gauges: ^19.1.59
   http: ^0.13.3
-  axios: ^1.0.1+1
   flutter_rating_bar: ^4.0.0
 
 dev_dependencies:
