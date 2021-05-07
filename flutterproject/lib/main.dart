@@ -3,6 +3,7 @@ import 'package:hackathon_capgemini_210506/constants.dart';
 import 'package:hackathon_capgemini_210506/landing_screen/landing_screen.dart';
 import 'package:hackathon_capgemini_210506/data_screen/data_screen.dart';
 import 'package:hackathon_capgemini_210506/analytics_screen/analytics_screen.dart';
+import 'package:hackathon_capgemini_210506/news_screen/news_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -49,7 +50,7 @@ class _OverarchingHomeComponentState extends State<OverarchingHomeComponent> {
         body: TabBarView(
           children: [
             LandingScreen(),
-            DataScreen(),
+            NewsScreen(),
             AnalyticsScreen(),
           ],
         ),

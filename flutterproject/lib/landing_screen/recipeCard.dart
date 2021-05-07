@@ -54,13 +54,17 @@ class RecipeCard extends StatelessWidget {
                 // margin: EdgeInsets.all(10),
               ),
               Container(
-                  height: 150,
+                  height: 200,
                   padding: EdgeInsets.symmetric(
                       vertical: Constants.defaultPadding / 2),
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Text(recipe.title, style: Constants.textStyleH2),
+                        Padding(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: Constants.defaultPadding),
+                            child: Text(recipe.title,
+                                style: Constants.textStyleH2)),
                         Text('Rezept mit ${recipe.ingredients.length} Zutaten',
                             style: Constants.textStyleSmall),
                         RatingBarIndicator(
