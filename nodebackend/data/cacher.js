@@ -32,6 +32,7 @@ function shuffle(a) {
 }
 
 async function readAllCachedFilesAndReturnContent(limit) {
+  limit = 12;
   let dirContent = await fs.promises.readdir("./cache");
   dirContent = shuffle(dirContent);
 
