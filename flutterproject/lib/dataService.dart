@@ -132,3 +132,45 @@ Future<List<Recipe>> getCachedChefkochDataFromURL(int limit) async {
     return null;
   }
 }
+
+class GoogleUser {
+  GoogleUser(String email, String username, String imageURL,
+      num averageEmissions, num totalEmissions, num mealsAmount);
+  String email;
+  String username;
+  String imageURL;
+  num averageEmissions;
+  num totalEmissions;
+  num mealsAmount;
+}
+
+Future<List<GoogleUser>> getLeaderboard(int limit) async {
+  try {
+    var backendURL = Uri.parse(Constants.backendURL + "/leaderboard");
+    http.Response response = await http.post(
+      backendURL,
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+    );
+    List<GoogleUser> retrievedUsers = [];
+
+    var requestBody = jsonDecode(response.body);
+    requestBody?.forEach((dynamic userObject) {
+      List<GoogleUser> retrievedUsers = [];
+      userObject["GoogleUser"].forEach((el) {
+        retrievedUsers.add(GoogleUser(
+            el["email"],
+            el["username"],
+            el["imageUrl"],
+            el["averageEmissions"],
+            el["totalEmissions"],
+            el["mealsAmount"]));
+      });
+    });
+    return retrievedUsers;
+  } catch (exception) {
+    print(exception);
+    return null;
+  }
+}
