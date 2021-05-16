@@ -11,6 +11,13 @@ const {
   readAllCachedFilesAndReturnContent,
 } = require("../data/cacher.js");
 
+const { 
+  checkIfNewUser,
+  readUserDataFromFile,
+  writeUserDataToFile,
+  readTopTen,
+} = require("../data/userdata.js");
+
 const { chefkochURLToData } = require("../data/chefkochscraper.js");
 
 async function oneIngredientHandler(req, res) {
@@ -109,9 +116,14 @@ async function chefkochURLHandler(req, res) {
     res.status(400).send("Please provide 'url' as field of POST-Request Body!");
   }
 }
+async function cookingHandler(req,res){
+  res.status(500).send("Route not ready yet!");
+}
+
 
 module.exports.oneIngredientHandler = oneIngredientHandler;
 module.exports.recipeHandler = recipeHandler;
 module.exports.allIngredients = allIngredients;
 module.exports.chefkochURLHandler = chefkochURLHandler;
 module.exports.allCachedRecipes = allCachedRecipes;
+module.exports.cookingHandler = cookingHandler;

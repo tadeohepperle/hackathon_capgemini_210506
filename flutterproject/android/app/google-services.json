@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "175784484580",
+    "project_id": "carboncruncher",
+    "storage_bucket": "carboncruncher.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175784484580:android:cb44b6d8a7e915c06a16f1",
+        "android_client_info": {
+          "package_name": "com.example.hackathon_capgemini_210506"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175784484580-tdbgbvbuhmcltt54tos3ov2j5dln1rnk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hackathon_capgemini_210506",
+            "certificate_hash": "96821d3ee63911c55884ca5752ed3d316b436f75"
+          }
+        },
+        {
+          "client_id": "175784484580-hork9punpi7gekov9va65ucr2ltu03ns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuag6SnB1t8rq6cXSik99WBYcqkBuzvB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175784484580-hork9punpi7gekov9va65ucr2ltu03ns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

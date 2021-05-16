@@ -1,22 +1,26 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:hackathon_capgemini_210506/dataService.dart';
+import 'package:hackathon_capgemini_210506/google_auth/provider/google_sign_in.dart';
+import 'package:hackathon_capgemini_210506/google_auth/widget/userCard.dart';
+import 'package:provider/provider.dart';
 import 'package:hackathon_capgemini_210506/constants.dart';
-import 'package:hackathon_capgemini_210506/landing_screen/recipeCard.dart';
+import 'package:hackathon_capgemini_210506/dataService.dart';
 
-class NewsScreen extends StatefulWidget {
-  NewsScreen({Key key}) : super(key: key);
+class LoggedInWidget extends StatefulWidget {
+  @override
+  LoggedInWidget({Key key}) : super(key: key);
 
   @override
-  _NewsScreenState createState() => _NewsScreenState();
+  _LoggedInWidget createState() => _LoggedInWidget();
 }
 
-class _NewsScreenState extends State<NewsScreen> {
-  List<Recipe> recipes = null;
+class _LoggedInWidget extends State<LoggedInWidget> {
+  List<GoogleUser> users = null;
 
   void initialisation() async {
-    var result = await getCachedChefkochDataFromURL(10);
+    var result = await getLeaderboard(10);
     setState(() {
-      recipes = result;
+      users = result;
     });
   }
 
@@ -29,18 +33,18 @@ class _NewsScreenState extends State<NewsScreen> {
 
   void onReloadPress() async {
     setState(() {
-      recipes = null;
+      users = null;
     });
-    var result = await getCachedChefkochDataFromURL(10);
+    var result = await getLeaderboard(10);
     setState(() {
-      recipes = result;
+      users = result;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     Widget child;
-    if (recipes == null) {
+    if (users == null) {
       child = Center(
           child: Container(
               margin: EdgeInsets.only(top: Constants.defaultPadding * 2),
@@ -53,11 +57,11 @@ class _NewsScreenState extends State<NewsScreen> {
                   ))));
     } else {
       child = ListView(
-          children: recipes
-              .map((recipe) => Container(
+          children: users
+              .map((user) => Container(
                   padding: EdgeInsets.only(top: Constants.defaultPadding),
-                  child: RecipeCard(
-                    recipe: recipe,
+                  child: UserCard(
+                    googleUser: user,
                   )))
               .toList());
     }

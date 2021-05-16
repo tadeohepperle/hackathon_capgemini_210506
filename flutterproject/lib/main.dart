@@ -4,8 +4,12 @@ import 'package:hackathon_capgemini_210506/landing_screen/landing_screen.dart';
 import 'package:hackathon_capgemini_210506/data_screen/data_screen.dart';
 import 'package:hackathon_capgemini_210506/analytics_screen/analytics_screen.dart';
 import 'package:hackathon_capgemini_210506/news_screen/news_screen.dart';
+import 'package:hackathon_capgemini_210506/google_auth/main_page.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -33,11 +37,12 @@ class _OverarchingHomeComponentState extends State<OverarchingHomeComponent> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           bottom: TabBar(
             tabs: [
+              Tab(icon: Icon(Icons.backup_table)),
               Tab(icon: Icon(Icons.backup_table)),
               Tab(icon: Icon(Icons.explore))
             ],
@@ -45,7 +50,7 @@ class _OverarchingHomeComponentState extends State<OverarchingHomeComponent> {
           title: Text('Carbon Crunch - CO² Checker'),
         ),
         body: TabBarView(
-          children: [LandingScreen(), NewsScreen()],
+          children: [LandingScreen(), NewsScreen(), HomePage()],
         ),
       ),
     );

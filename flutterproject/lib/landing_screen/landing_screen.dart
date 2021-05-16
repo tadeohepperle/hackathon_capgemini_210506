@@ -105,7 +105,7 @@ class _LandingScreenState extends State<LandingScreen> {
                   aspectRatio: 1,
                   child: CircularProgressIndicator(
                     strokeWidth: 20,
-                    color: Constants.primaryColor,
+                    //  color: Constants.primaryColor,
                   )))));
     }
     if (uiState == UIState.postButtonClick)
